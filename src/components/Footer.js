@@ -1,0 +1,14 @@
+import React, { Component } from 'react';
+
+class Footer extends Component {
+    
+    render() { 
+        return ( 
+            <footer className="footer-main">
+                <h2>&copy; copyright 2021 - <a href="http://localhost:3000/">Gluay</a></h2>
+            </footer>
+         );
+    }
+}
+ 
+export default Footer;
