@@ -15,7 +15,7 @@ export class AnimationHome extends Component {
 
     render() {
         return (
-       
+       <div className="homepage_gluay">
                 <div className="gluay">
                     <div className="gluayInfo">
                         <Typist cursor={{ show: false}}>
@@ -27,7 +27,7 @@ export class AnimationHome extends Component {
                             <Typist cursor={{ show: false}}>
                             <Typist.Delay ms={1800} />
                                 <h1>
-                                    I'm <span>Gluay <br /> web developer</span>.
+                                    I'm <span>Gluay</span>, <br /> <span>web developer</span>.
                                 </h1>
                             </Typist>
                         </div>
@@ -51,7 +51,7 @@ export class AnimationHome extends Component {
                     </div>
                         
                 </div>
-               
+            </div>   
            
         )
     }
