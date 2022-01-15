@@ -9,7 +9,7 @@ function Header() {
    
         return ( 
             <header className="header">
-                <a href="http://localhost:3000/">Gluay</a>
+                <a href="https://gluay88.github.io/portfolio-website">Gluay</a>
                 <EmailLogo />
                 <GitHub />
                 <Navigation />

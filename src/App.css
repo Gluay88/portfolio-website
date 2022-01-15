@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #c87e7e;
-    padding: 10px;
+    padding: 15px;
     font-weight: 700;
     margin: 0 0 25px 0;
     
@@ -12,6 +12,7 @@
 .header a {
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .header a:hover{
@@ -68,7 +69,6 @@
 .container-all {
     width: 90vw;
     height: 100%;
-    /* border: 1px solid yellow; */
     margin: 0 auto;  
 }
 
@@ -111,7 +111,7 @@
     width: 17.5px;
     height: auto;
     position: absolute;
-    right: 35px;
+    right: 40px;
     margin: 3px 0 0 0;
      
 }
@@ -129,7 +129,7 @@
     width: 18px;
     height: auto;
     position: absolute;
-    right: 64px;
+    right: 70px;
     margin: 3px 0 0 0;
    
 }
