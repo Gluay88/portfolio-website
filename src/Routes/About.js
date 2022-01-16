@@ -3,6 +3,7 @@ import '../App.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import project_pic2 from '../assets/project_pic2.jpg';
+import GluayPhoto from '../assets/gluay_photo.jpg';
 
 function About() {
     return (
@@ -11,7 +12,7 @@ function About() {
             <div className="container-all">
                 <h2>About Gluay Here!</h2>
                 <div id="about-page">
-                    <img id="aboutPage-photo" src={project_pic2}/>
+                    <img id="aboutPage-photo" src={GluayPhoto}/>
                         <div id="aboutText">
                             <h3>Gluay stuff goes here!</h3>
                             <br/>
