@@ -338,18 +338,19 @@ form {
 
     
     .nav-links li {
-        display: inline-block;
+        display: inline-flex;
         border:none;
-       
+        
         
     }
     .nav-links li a {
-        display: inline-block;
+        display: block;
         color:#F9F7F9;
-        padding:0;
-        width: 80px;
+        width: 100px;
         height: 30px;
-        text-align: center;
+        text-align: center;    
+        padding-top:5px;
+       
         
     }
     .menu-mask {

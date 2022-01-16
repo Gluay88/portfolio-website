@@ -48,6 +48,7 @@ export class AnimationHome extends Component {
                     </div>  
                     <div className="gluay_home_pic">
                         <img src={GluayHomePhoto}/>
+                        
                     </div>
                         
                 </div>

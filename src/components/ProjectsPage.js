@@ -21,7 +21,7 @@ class ProjectsPage extends Component {
                     <img src={this.props.imageSrc}/>
                     <h3>{this.props.projectNameTag}</h3>
                     <p>{this.props.description}</p>
-                    <button>More..</button>
+                    <button>{this.props.buttonLink}</button>
               
                     
                 </div>  
