@@ -19,13 +19,13 @@ export class AnimationHome extends Component {
                 <div className="gluay">
                     <div className="gluayInfo">
                         <Typist cursor={{ show: false}}>
-                            <Typist.Delay ms={500} />
+                            <Typist.Delay ms={1000} />
                             <h4>Hello there!</h4>
                         </Typist>
                         <br />
                         <div className="description">
                             <Typist cursor={{ show: false}}>
-                            <Typist.Delay ms={1800} />
+                            <Typist.Delay ms={2300} />
                                 <h1>
                                     I'm <span>Glu@y</span>, <br /> <span>web developer</span>.
                                 </h1>
@@ -34,7 +34,7 @@ export class AnimationHome extends Component {
                         <br />
                         <div className="text-description">
                             <Typist cursor={{ show: false}}>
-                            <Typist.Delay ms={4000} />
+                            <Typist.Delay ms={4600} />
                                 <h3>
                                     I love to code and design.
                                 </h3>
@@ -42,13 +42,12 @@ export class AnimationHome extends Component {
                             <br />    
                         </div> 
                         <Typist cursor={{ show: false}}>
-                            <Typist.Delay ms={6200} />
+                            <Typist.Delay ms={6800} />
                                 <a href="https://gluay88.github.io/portfolio-website/#/Projects">My Projects</a>
                         </Typist>    
                     </div>  
                     <div className="gluay_home_pic">
-                        <img src={GluayHomePhoto}/>
-                        
+                        <img src={GluayHomePhoto}/>    
                     </div>
                         
                 </div>

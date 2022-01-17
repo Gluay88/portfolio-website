@@ -140,8 +140,7 @@
     height: auto;
     display: flex;
     justify-content: space-around; 
-    
-    
+  
 }
 
 
@@ -159,9 +158,7 @@
     height: auto;
     box-shadow: 5px 3px 3px #1c0234;
     border-bottom: solid 1px rgb(160, 151, 203);
-    border-right: solid 1px rgb(160, 151, 203);
-    
-    
+    border-right: solid 1px rgb(160, 151, 203);  
     
 }
 
@@ -193,7 +190,7 @@
     position: absolute;
     right: calc(100% - 98%);
     cursor: pointer;
-
+    
 }
 
 .project_page_info button:hover {
@@ -201,16 +198,21 @@
     transform: scale(1.1, 1.1)
 }
 
+.project-div img {
+    width: 95%;
+    height: auto;
+    display: flex;
+}
 
 /*********** About Page **********/
 #about-page {
     display: flex;
     justify-content: center;
-    
+    position: relative;
     
 }
 #aboutPage-photo {
-    width: 35%;
+    width: 25vw;
     height: auto;
     margin: 15px 0 0 0;
     object-fit: cover;
@@ -232,19 +234,32 @@
 }
 
 /*******  Contact Form Page *********/
+
+#contact-form {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+.container-all h2 {
+    text-align: center;
+}
+
 #contact-form h2 {
     font-size: 20px;
     color: #e9b5fe;
     margin-bottom: 20px;
     margin:15px 0 0 0;
+    text-align: ;
 }
 
-form {
+#contact-form form {
     width: 100%;
     height: auto;
     margin: 15px 0 0 0;
     position: relative;
-}
+} 
+
+
 #contact-form label {
     font-size: 14px;
     color: #F9F7F9;
@@ -292,7 +307,7 @@ form {
 
 .footer-main {
     width: 100%;
-    height: 40px;
+    height: 50px;
     background-color: #B3D0FE;
     text-align: center;
     position: absolute;
@@ -301,8 +316,8 @@ form {
     align-items: center;
     display: flex;
     color:#333;
-    
-    
+    z-index: 100;
+    margin-top: 30px;
 }
 
 .footer-main h2 {
@@ -360,4 +375,24 @@ form {
     animated.div  {
         display: none;
     }
+
+    
+
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 350px) {
+    #aboutPage-photo {
+        width: 35vw;
+    }
+
+    #aboutText p {
+        font-size: 15px;
+    }
+    #contact-form {
+        width: 100%;
+        height: auto;
+    }
+    
+    
 }

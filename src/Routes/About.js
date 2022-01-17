@@ -16,8 +16,15 @@ function About() {
                         <div id="aboutText">
                             <h3>Gluay stuff goes here!</h3>
                             <br/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel diam lacus. Vestibulum a velit tortor. Donec finibus quam sapien, sed dapibus nisi porttitor vitae. Maecenas sodales cursus erat, sit amet ultrices enim blandit at. Nam egestas malesuada justo non iaculis. In suscipit, augue eget malesuada pretium, libero metus pellentesque nunc, quis finibus felis risus sit amet leo. Vivamus ante est, aliquam non tellus nec, ultrices porttitor nisi. Nullam mi nisl, dignissim quis lacus eu, malesuada bibendum velit.
-                            </p>
+                            <p>Write a bit about yourself here..</p>
+                            <br />
+                            <p>Background?? Degress?? -- Timeline??</p>
+                            <br />
+                            <p>Works you have done in the past?? -- Timeline??</p>
+                            <br />
+                            <p>Softwares you use
+                            <br />
+                            Ruby on Rails, Ruby, React, JavaScript, HTML, CSS, AferEffect, Illustrator, PhotoShop..??</p>
                         </div>
                     </div>
               
