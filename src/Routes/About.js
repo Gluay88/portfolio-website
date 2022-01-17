@@ -10,11 +10,11 @@ function About() {
         <div>
             <Header />
             <div className="container-all">
-                <h2>About Gluay Here!</h2>
+                <h2>About Glu@y Here!</h2>
                 <div id="about-page">
                     <img id="aboutPage-photo" src={GluayPhoto}/>
                         <div id="aboutText">
-                            <h3>Gluay stuff goes here!</h3>
+                            <h3>Glu@y stuff goes here!</h3>
                             <br/>
                             <p>Write a bit about yourself here..</p>
                             <br />

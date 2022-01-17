@@ -24,7 +24,7 @@ class Contact extends Component {
               <h2>Please say hello!</h2>  
 
                 <div id="contact-form">
-                  <h2>Contact Gluay <svg style={{width:"28px", transform: "rotate(-45deg)", margin:"0 0 0 -8px"}} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <h2>Contact Glu@y <svg style={{width:"28px", transform: "rotate(-45deg)", margin:"0 0 0 -8px"}} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                 </svg></h2> 
                 <form>
