@@ -30,7 +30,7 @@ class Projects extends React.Component {
 
             tools : [
                 "JavaScript, HTML, CSS, Illustrator, PhotoShop",
-                "UX and UI Design, JavaScript, HTML, CSS, Illustrator, PhotoShop",
+                "JavaScript, HTML, CSS, Illustrator, PhotoShop",
                 "Javascript, HTML, CSS, Illustr  ator, PhotoShop",
                 "WordPress, PHP, HTML, CSS, Illustrator, PhotoShop",
                 "JavaScript, HTML, CSS, Illustrator, PhotoShop",
