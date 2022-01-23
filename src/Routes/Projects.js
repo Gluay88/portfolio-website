@@ -18,20 +18,20 @@ class Projects extends React.Component {
         this.state = {
             imageSrc: [project_pic1, project_pic2, project_pic3, project_pic4, project_pic5, project_pic6],
 
-            projectNameTag : ["Mangosteen Thai Restaurant, Colorado Springs, CO", "MGNOnline Pro Graphic Builder, San Diego, CA", "Superior Siding Inc. Custom Carpentry, San Diego, CA", "Wisdom Bistro Kirkland Restaurant, WA", "Crystall Skulls - Tresture Hunt, San Diego, CA", "PigLatin - Text Game, San Diego, CA"],
+            projectNameTag : ["Mangosteen Restaurant", "MGNPro/BMOPro", "Superior Siding Inc.", "Wisdom Bistro Kirkland", "Crystall Skulls", "PigLatin - React Game"],
 
             description : [
-                "Create both coding and design parts",
-                "Interface for the graphic bulider",
-                "Build framework, codign and design",
-                "Design webpage using a framework",
-                "Create both coding and design parts",
-                "Create both coding and design parts"],
+                "Thai restaurant",
+                "Graphic bulider",
+                "Custom carpentry",
+                "Asian fusion restaurant",
+                "Tresture hunter game",
+                "Language game"],
 
             tools : [
                 "JavaScript, HTML, CSS, Illustrator, PhotoShop",
                 "JavaScript, HTML, CSS, Illustrator, PhotoShop",
-                "Javascript, HTML, CSS, Illustr  ator, PhotoShop",
+                "Javascript, HTML, CSS, Illustrator, PhotoShop",
                 "WordPress, PHP, HTML, CSS, Illustrator, PhotoShop",
                 "JavaScript, HTML, CSS, Illustrator, PhotoShop",
                 "JavaScript, HTML, CSS, Illustrator, PhotoShop"],

@@ -29,33 +29,16 @@ class Contact extends Component {
                 </svg></h2> 
                 <form>
                   <label for="fname">First Name</label>
-                  <input
-                  type="text"
-                  id="name"
-                  value=""
-                  />
+                  <input type="text" id="name" placeholder="Enter name" required/>
+
                   <label for="lname">Last Name</label>
-                  <input
-                  type="text"
-                  id="name"
-                  value=""
-                  />
+                  <input type="text" id="lastname" placeholder="Enter last name" required/>
 
                   <label for="email">Email</label>
-                  <input
-                  type="text"
-                  id="name"
-                  value=""
-                  />
+                  <input type="text" id="email" placeholder="example@email.com" required/>
                   
-
                   <label for="message">Message</label>
-                  <textarea
-                  type="text"
-                  id="message"
-                  value=""
-                  >
-                       
+                  <textarea type="text" id="message" placeholder="Enter message" required>
                   </textarea>
                   
                   <button>Submit</button>
