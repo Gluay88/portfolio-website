@@ -143,9 +143,24 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    animation: fadeIn 2.5s;
     
 }
-
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+        transform: translateY(100%);
+        
+    }
+   
+    100% {
+        opacity:1;
+        transform: translateY(0%);
+    }
+  }
+  
+  
+  
 
 .project_page_info {
     /* width: 90%; */
@@ -205,8 +220,7 @@
 }
 .project-div {
     width: 33.25%;
-    height: 600px;
-    
+    height: 600px; 
 }
 
 .project-div:nth-last-of-type(1) {
@@ -220,8 +234,22 @@
     display: flex;
     justify-content: center;
     position: relative;
+    animation: fadeLeft 2s;
     
 }
+
+@keyframes fadeLeft {
+    0% {
+        opacity:0;
+        transform: translateX(-100%);
+        
+    }
+   
+    100% {
+        opacity:1;
+        transform: translateX(0%);
+    }
+  }
 #aboutPage-photo {
     width: 25vw;
     height: auto;
@@ -250,7 +278,21 @@
     width: 60%;
     height: auto;
     margin: 0 auto;
+    animation: fadeDown 2s;
 }
+
+@keyframes fadeDown {
+    0% {
+        opacity:0;
+        transform: translateY(100%);
+        
+    }
+   
+    100% {
+        opacity:1;
+        transform: translateY(0%);
+    }
+  }
 .container-all h2 {
     text-align: center;
 }
@@ -404,6 +446,24 @@
         width: 100%;
         height: auto;
     }
+
+    .project-div {
+        width: 50%;
+        height: 300px; 
+        font-size: 12px;
+        
+    }
+    .project-div p {
+        display: none;
+    }
+
+    .project-div button {
+        margin: -35px 0 0 0;
+        text-align: center;
+        position: relative;
+        
+    }
+        
     
     
 }
