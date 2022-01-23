@@ -29,7 +29,7 @@ export class AnimationHome extends Component {
                             <Typist cursor={{ show: false}}>
                             <Typist.Delay ms={2300} />
                                 <h1>
-                                    I'm <span>Glu@y</span>, <br /> <span>web developer</span>.
+                                    I'm <span>Glu@y</span>, <br /> <span>full stack developer</span>.
                                 </h1>
                             </Typist>
                         </div>

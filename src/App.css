@@ -68,7 +68,8 @@
 
 .container-all {
     width: 90vw;
-    height: 100vh;
+    height: auto;
+    /* height: 100vh; */
     margin: 0 auto;  
     
    
@@ -234,8 +235,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    animation: fadeLeft 2s;
-    
+    animation: fadeLeft 2s; 
 }
 
 @keyframes fadeLeft {
@@ -254,8 +254,7 @@
     width: 25vw;
     height: auto;
     margin: 15px 0 0 0;
-    object-fit: cover;
-   
+    object-fit: cover; 
     
 }
 
@@ -265,10 +264,50 @@
     border-bottom: solid 1px rgb(160, 151, 203);
     border-right: solid 1px rgb(160, 151, 203);
     width: 65%;
-    padding: 15px 35px;
+    padding: 15px 0 25px 65px;
     height: auto;
     margin: 15px 0 0 0;
+   
+}
+#aboutText h4 {
+    color:#e9b5fe;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+#aboutText p {
+    font-size: 14px;
+    line-height:25px;
+}
+.software {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    padding:50px 0 150px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    animation: fadeRight 2s; 
     
+}
+
+@keyframes fadeRight {
+    0% {
+        opacity:0;
+        transform: translateX(100%);
+        
+    }
+   
+    100% {
+        opacity:1;
+        transform: translateX(0%);
+    }
+  }
+
+.software img {
+    width: 10%;
+    height: auto;
+    margin: 0 20px 15px 0;
     
 }
 
