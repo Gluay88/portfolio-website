@@ -1,7 +1,8 @@
 .homepage_gluay {
     width: 100vw;
     height: auto;
-    margin: 80px 0 0 0;
+    margin: 100px 0 0 0;
+    
 }
 
 .gluay {
@@ -15,6 +16,8 @@
     border-bottom: solid 2px rgb(160, 151, 203);
     border-right: solid 2px rgb(160, 151, 203);
     padding: 25px 0;
+    
+  
     
 }
 
@@ -85,15 +88,21 @@
  
 @keyframes slidein {
     from {
-      margin-right: 150%;
-      width: 150vw;
+      margin-left: -280%;
+      margin-top:-150px;
+      width: 175vw;
+   
     }
   
     to {
-      margin-left: 0%;
+      margin-right: 0%;
+      margin-top:0px;
       width: 45vw;
+     
     }
   }
+
+ 
 
 /************** Media Query *******/
 @media screen and (max-width: 900px) and (min-width: 400px) {

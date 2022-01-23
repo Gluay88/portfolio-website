@@ -41,6 +41,14 @@ class Contact extends Component {
                   value=""
                   />
 
+                  <label for="email">Email</label>
+                  <input
+                  type="text"
+                  id="name"
+                  value=""
+                  />
+                  
+
                   <label for="message">Message</label>
                   <textarea
                   type="text"

@@ -17,6 +17,7 @@ export class AnimationHome extends Component {
     render() {
         return (
        <div className="homepage_gluay">
+          
                 <div className="gluay">
                     <div className="gluayInfo">
                         <Typist cursor={{ show: false}}>
@@ -52,7 +53,8 @@ export class AnimationHome extends Component {
                     </div>
                         
                 </div>
-            </div>   
+            
+        </div>   
            
         )
     }
