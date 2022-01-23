@@ -22,7 +22,7 @@ class Projects extends React.Component {
 
             description : [
                 "Create both coding and design parts",
-                "Design interface for the graphic bulider",
+                "Interface for the graphic bulider",
                 "Build framework, codign and design",
                 "Design webpage using a framework",
                 "Create both coding and design parts",
