@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import './AnimationStyle.css';
 import Typist from 'react-typist';
-// import GluayHomePhoto from '../assets/gluay_home_photo.png';
 import GluayHomePhoto from '../assets/gluayLaptop.png';
+// import Laptop from '../assets/laptop.svg';
+import Laptop from '../assets/laptop.png';
 
 
 
@@ -49,7 +50,8 @@ export class AnimationHome extends Component {
                         </Typist>    
                     </div>  
                     <div className="gluay_home_pic">
-                        <img src={GluayHomePhoto} alt="Gluay Workign Picture"/>    
+                        {/* <img src={GluayHomePhoto} alt="Gluay Workign Picture"/>     */}
+                        <img src={Laptop} alt="laptop" />
                     </div>
                         
                 </div>

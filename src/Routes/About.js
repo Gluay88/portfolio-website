@@ -32,12 +32,28 @@ function About() {
                         <div id="aboutText">
                             <h3>Glu@y S. Wang</h3>
                             <br/>
-                            <p>Hi there! My name is Gluay ("Glue-A"). <br/>Add a bit more of yourself here..</p>
-                            <br />
-                            <br />
-                            <h4>Education....................</h4>
-                            <p>&#10148; Full Stack Development Bootcamp Course, Learn Academy, California</p>
 
+                            <p>Hello! My name is Gluay ("Glue-A"). <br/>
+                            talk about yourself here..
+                             </p>
+                            {/* I'm a full stack web developer and UX/UI enthusiast 
+                            coming from an architecture and design background with a deep understanding of the web who enjoys using multiple tools to engineer and create. Looking forward to growing and extending my developmental skills through my passion for creating and coding. */}
+
+                            <br />
+                            <br />
+
+
+                            <h4>Work Experience..........</h4>
+                            {/* <p>&#10148; Full Stack Development Bootcamp Course, Learn Academy, California</p> */}
+                            
+                            <p>&#10148; Work 1, Role, Year X - Y</p>
+                            <p>&#10148; Work 2, Role, Year X - Y</p>
+                            <p>&#10148; Work 3, Role, Year X - Y</p>
+                            <br />
+                            <br />
+
+
+                            <h4>Education....................</h4>
                             <p>&#10148; Bachelor’s Degrees in Architecture, Chulalongkorn University, Thailand</p>
                          
                             <p>&#10148; Certification of Interaction Design, Santa Monica College, California</p>
@@ -45,13 +61,7 @@ function About() {
                             <br />
                             <br />
                             
-                            <h4>Work Experience..........</h4>
-                            <p>Works you have done in the past -- Timeline??</p>
-                            <p>&#10148; Work 1, Role, Year X - Y</p>
-                            <p>&#10148; Work 2, Role, Year X - Y</p>
-                            <p>&#10148; Work 3, Role, Year X - Y</p>
-                            <br />
-                            <br />
+                            
 
                             <h4>Softwares you use / Skills ??? ........</h4>
                             <p>

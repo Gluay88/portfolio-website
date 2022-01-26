@@ -34,7 +34,7 @@ class Projects extends React.Component {
                 "Javascript, HTML, CSS, Illustrator, PhotoShop",
                 "WordPress, PHP, HTML, CSS, Illustrator, PhotoShop",
                 "JavaScript, HTML, CSS, Illustrator, PhotoShop",
-                "JavaScript, HTML, CSS, Illustrator, PhotoShop"],
+                "React, JavaScript, HTML, CSS, Illustrator"],
 
             buttonLink: [
             <a href="http://www.719mangosteen.com/" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
@@ -59,7 +59,10 @@ class Projects extends React.Component {
             <Header />
             <div className="container-all">
                 <h2>Projects</h2> 
+                
+
                 <div className="projects_container">
+                   
 
                     <div className="project-div">
                     <a href="http://www.719mangosteen.com/" target="_blank">
@@ -114,13 +117,13 @@ class Projects extends React.Component {
                     buttonLink={this.state.buttonLink[5]} 
                     /> 
                     </a>
-                   </div>
-
-                    
+                   </div> 
                   
                 </div>
              </div>
+             
             <Footer />
+            
         </div>
         )
     
