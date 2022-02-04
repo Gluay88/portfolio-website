@@ -219,8 +219,7 @@
 }
 
 .project-div:nth-last-of-type(1) {
-    margin-bottom: 500px;
-    height: 680px;
+    height: 880px;
 }
 
 
@@ -384,8 +383,7 @@
     height: 130px;
     margin:0 auto;
     position: relative;
-    padding:5px 0 0 5px;
-    
+    padding:5px 0 0 5px;   
 
 }
 
@@ -519,6 +517,8 @@
         margin-bottom: 100px;
         
     }
+
+    
     
 }
 @media screen and (max-width: 600px) and (min-width: 350px) {
@@ -549,7 +549,7 @@
         width: 50%;
         height: 250px; 
         font-size: 12px;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         
     }
     .project-div p, .project-div button {
@@ -563,14 +563,35 @@
         
     }
 
+    .project-div:nth-last-of-type(1) {
+        height: 480px;
+    }
+
 
     .software-home img {
         width:12%;
     }
     
+    .software {
+        margin-top:860px;
+    }
+
     .software img {
         width:25%;
     }
-    
+    #aboutPage-photo {
+        width: 85vw;
+        height: auto;
+        margin: 15px 0 0 0;
+        object-fit:contain;
+       
+        
+    }
+    #aboutText {
+        width: 85vw;
+        height: auto;
+        position: absolute;
+        margin-top: 700px;
+    }
     
 }

@@ -45,6 +45,8 @@ class Projects extends React.Component {
             <a href="http://www.719mangosteen.com/" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
            
             <a href="https://new.mgnonline.com/BMO/Canvas?tab=Graphics&id=0" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
+
+            <a href="https://gluay88.github.io/portfolio-website/" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
            
             <a href="http://thaiwisdomkirkland.com/" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
            
