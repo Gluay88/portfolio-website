@@ -3,10 +3,10 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #c87e7e;
-    padding: 15px 30px;
+    padding: 2% 5%;
     font-weight: 700;
-    margin: 0 0 25px 0;
-    
+    margin-bottom: 40px;
+   
 }
 
 .header a {
@@ -113,8 +113,8 @@
 .github-icon {
     width: 17.5px;
     height: auto;
-    position: absolute;
-    right: 55px;
+    position: absolute; 
+    right: 7%;
     margin: 3px 0 0 0;
      
 }
@@ -132,7 +132,7 @@
     width: 18px;
     height: auto;
     position: absolute;
-    right: 85px;
+    right:9.25%;
     margin: 3px 0 0 0;
    
 }
@@ -160,15 +160,11 @@
     }
   }
   
-  
-  
 
 .project_page_info {
-    /* width: 90%; */
-    height: auto;
     text-align: center;
-    margin: 15px 0 0 0;
-    position: relative;
+    margin: 30px 0 40px 0;
+    
     
 }
 
@@ -208,9 +204,7 @@
     border-radius: 3px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin: 15px 0 0 0;
-    position: absolute;
-    right: calc(100% - 98%);
+    margin: 20px 0;
     cursor: pointer;
     
 }
@@ -221,7 +215,7 @@
 }
 .project-div {
     width: 33.25%;
-    height: 600px; 
+    height: auto; 
 }
 
 .project-div:nth-last-of-type(1) {
@@ -279,6 +273,18 @@
     font-size: 14px;
     line-height:25px;
 }
+.software-home {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    padding:50px 0 150px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    animation: fadeRight 2s; 
+    
+}
+
 .software {
     width: 85%;
     height: auto;
@@ -288,7 +294,6 @@
     flex-wrap: wrap;
     justify-content:center;
     animation: fadeRight 2s; 
-    
 }
 
 @keyframes fadeRight {
@@ -304,13 +309,18 @@
     }
   }
 
-.software img {
+  .software-home img {
     width: 10%;
     height: auto;
-    margin: 0 20px 15px 0;
+    /* margin: 0 20px 15px 0; */
     
 }
 
+.software img {
+    width: 8%;
+    height: auto;
+    margin: 15px 20px 5px 0;
+}
 /*******  Contact Form Page *********/
 
 #contact-form {
@@ -441,22 +451,21 @@
 
 
 /************** Media Query *******/
-@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
-
+@media screen and (min-width: 1010px) {
     .nav-links {
         margin:0 auto;
         right:0;
         position: absolute;
+        padding-top:1.5%
         
     }
-
     .nav-menu-small {
         background-color: transparent;
         border:none;
+        left: 20%;
+        width:65%  
         
     }
-
-    
     .nav-links li {
         display: inline-flex;
         border:none;
@@ -469,24 +478,61 @@
         width: 100px;
         height: 30px;
         text-align: center;    
-        padding-top:5px;
-       
+        padding-top:5px;  
         
     }
     .menu-mask {
         
         display: none;
     }
-    animated.div  {
-        display: none;
+    
+   
+
+}
+@media screen and (max-width: 1300px) and (min-width: 600px){
+    .header {
+        margin-bottom: 50px;
+    }
+    
+    
+    .github-icon {
+        right:8%;
     }
 
-    
+    .email-logo {
+        right: 11.5%;
+    }
 
 }
 
+@media screen and (max-width: 900px) and (min-width: 500px){
+    
+    .github-icon {
+        right:11%;
+    }
 
+    .email-logo {
+        right: 18%;
+    }
+
+    .gluay a {
+        margin-bottom: 100px;
+        
+    }
+    
+}
 @media screen and (max-width: 600px) and (min-width: 350px) {
+   .header {
+       margin-bottom: 30px;
+   }
+    .github-icon {
+        right:11%;
+    }
+
+    .email-logo {
+        right: 18%;
+    }
+
     #aboutPage-photo {
         width: 35vw;
     }
@@ -503,6 +549,7 @@
         width: 50%;
         height: 250px; 
         font-size: 12px;
+        margin-bottom: 35px;
         
     }
     .project-div p, .project-div button {
@@ -515,7 +562,15 @@
         position: relative;
         
     }
-        
+
+
+    .software-home img {
+        width:12%;
+    }
+    
+    .software img {
+        width:25%;
+    }
     
     
 }

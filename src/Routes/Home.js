@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import Header from '../components/Header';
-// import ContentHome from '../components/ContentHome';
 import AnimationHome from '../components/AnimationHome';
 import Footer from '../components/Footer';
 import Rails from '../assets/rails_logo.svg';
@@ -23,7 +22,7 @@ function Home() {
                 {/* <ContentHome />    */}
                 
             </div>
-            <div className="software">
+            <div className="software-home">
                         <img src={Rails} alt="Ruby on Rails logo" />
                         <img src={Ruby} alt="Ruby logo" />
                         <img src={React_logo} alt="React logo" />

@@ -15,16 +15,14 @@
     border-radius: 4px;
     border-bottom: solid 2px rgb(160, 151, 203);
     border-right: solid 2px rgb(160, 151, 203);
-    padding: 25px 0;
-    
-  
+    /* padding: 25px 0; */
     
 }
 
 .gluayInfo {
     width: 65vw;
     height: auto;
-    margin: 0 0 0 25px;   
+    /* margin: 0 0 0 25px;    */
 }
 
 .gluay h1 {
@@ -80,7 +78,7 @@
 .gluay_home_pic img {
     width: 45vw;
     height: auto;
-    margin-bottom: 0;
+    margin-bottom: -4px;
     animation-duration: 2s;
     animation-name: slidein;
     animation-timing-function: ease-in-out;
@@ -89,7 +87,7 @@
 @keyframes slidein {
     from {
       margin-left: -280%;
-      margin-top:-150px;
+      margin-top:-450px;
       width: 175vw;
    
     }
@@ -105,7 +103,7 @@
  
 
 /************** Media Query *******/
-@media screen and (max-width: 900px) and (min-width: 400px) {
+@media screen and (max-width: 1000px) and (min-width: 400px) {
     .homepage_gluay {
         margin: 0 auto;
         text-align: center;
@@ -133,10 +131,8 @@
         font-size: 17px;
     }
 
-    .gluay_home_pic img {
-        
-        display: none;
-        /* position: relative; */
+    .gluay_home_pic img { 
+        display: none;  
     }
 
     .gluay a {
@@ -144,6 +140,7 @@
         height: 40px;
         font-size: 15px;
         margin: 0 auto;
+        margin-bottom: 40px;
     }
 
 

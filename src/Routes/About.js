@@ -34,7 +34,8 @@ function About() {
                             <br/>
 
                             <p>Hello! My name is Gluay ("Glue-A"). <br/>
-                            talk about yourself here..
+                            I'm a full stack web developer and UX/UI enthusiast 
+                            coming from an architecture and design background with a deep understanding of the web who enjoys using multiple tools to engineer and create.
                              </p>
                             {/* I'm a full stack web developer and UX/UI enthusiast 
                             coming from an architecture and design background with a deep understanding of the web who enjoys using multiple tools to engineer and create. Looking forward to growing and extending my developmental skills through my passion for creating and coding. */}
@@ -46,9 +47,9 @@ function About() {
                             <h4>Work Experience..........</h4>
                             {/* <p>&#10148; Full Stack Development Bootcamp Course, Learn Academy, California</p> */}
                             
-                            <p>&#10148; Work 1, Role, Year X - Y</p>
-                            <p>&#10148; Work 2, Role, Year X - Y</p>
-                            <p>&#10148; Work 3, Role, Year X - Y</p>
+                            <p>&#10148; Full Stack Development Bootcamp Course, Learn Academy, California Nov 2021 - Present</p>
+                            <p>&#10148; Web and Graphic Designer and Animator , MGNOnline, California Mar 2018 - Oct 2021</p>
+                            <p>&#10148; Landscape Architect, Bermuda Landscape Architects Co, Ltd, Thailand Apr 2013 - Dec 2015</p>
                             <br />
                             <br />
 
@@ -63,9 +64,9 @@ function About() {
                             
                             
 
-                            <h4>Softwares you use / Skills ??? ........</h4>
+                            <h4>Softwares.....................</h4>
                             <p>
-                            Ruby on Rails, Ruby, React, JavaScript, Git, GitHub, HTML, CSS, Node.js, TypeScript, Jest, Postgresql, Postman, WordPress, Bootstrap, AutoCAD, SketchUp,AferEffect, Illustrator, PhotoShop, InDesign..??</p>
+                            Ruby on Rails, Ruby, React, JavaScript, Git, GitHub, HTML, CSS, Node.js, TypeScript, Jest, Postgresql, Postman, WordPress, Bootstrap, AutoCAD, SketchUp,AferEffect, Illustrator, PhotoShop, InDesign</p>
                         </div>
                     </div>
                     <div className="software">

@@ -9,6 +9,7 @@ import project_pic3 from '../assets/project_pic3.jpg';
 import project_pic4 from '../assets/project_pic4.jpg';
 import project_pic5 from '../assets/project_pic5.jpg';
 import project_pic6 from '../assets/project_pic6.jpg';
+import catTinder from '../assets/cat_tinder.jpg';
 
 
 
@@ -16,9 +17,9 @@ class Projects extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            imageSrc: [project_pic1, project_pic2, project_pic3, project_pic4, project_pic5, project_pic6],
+            imageSrc: [project_pic1, project_pic2, project_pic3, project_pic4, project_pic5, project_pic6, catTinder],
 
-            projectNameTag : ["Mangosteen Restaurant", "MGNPro/BMOPro", "Superior Siding Inc.", "Wisdom Bistro Kirkland", "Crystall Skulls", "PigLatin - React Game"],
+            projectNameTag : ["Mangosteen Restaurant", "MGNPro/BMOPro", "Superior Siding Inc.", "Wisdom Bistro Kirkland", "Crystall Skulls", "PigLatin - React Game", "Cat Tinder"],
 
             description : [
                 "Thai restaurant",
@@ -26,7 +27,9 @@ class Projects extends React.Component {
                 "Custom carpentry",
                 "Asian fusion restaurant",
                 "Tresture hunter game",
-                "Language game"],
+                "Language game",
+                "Full Stack App"
+            ],
 
             tools : [
                 "JavaScript, HTML, CSS, Illustrator, PhotoShop",
@@ -34,20 +37,22 @@ class Projects extends React.Component {
                 "Javascript, HTML, CSS, Illustrator, PhotoShop",
                 "WordPress, PHP, HTML, CSS, Illustrator, PhotoShop",
                 "JavaScript, HTML, CSS, Illustrator, PhotoShop",
-                "React, JavaScript, HTML, CSS, Illustrator"],
+                "React, JavaScript, HTML, CSS, Illustrator",
+                "Rails, React, JavaScript, HTML, CSS, Illustrator"
+            ],
 
             buttonLink: [
             <a href="http://www.719mangosteen.com/" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
            
             <a href="https://new.mgnonline.com/BMO/Canvas?tab=Graphics&id=0" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
-            
-            <a href="https://gluay88.github.io/portfolio-website/" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
            
             <a href="http://thaiwisdomkirkland.com/" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
            
             <a href="https://gluay88.github.io/" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
 
-            <a href="https://github.com/learn-academy-2021-echo/pig-latin-porcuslatin" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>
+            <a href="https://github.com/learn-academy-2021-echo/pig-latin-porcuslatin" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>,
+
+            <a href="https://github.com/learn-academy-2021-echo/cat-tinder-frontend-sphinx" target="_blank" style={{color:'white', textDecoration: 'none'}}>More..</a>
         ]
         
         }
@@ -62,6 +67,33 @@ class Projects extends React.Component {
                 
 
                 <div className="projects_container">
+
+                <div className="project-div">
+                    <a href="https://github.com/learn-academy-2021-echo/cat-tinder-frontend-sphinx" target="_blank"> 
+                    <ProjectsPage imageSrc={this.state.imageSrc[6]} projectNameTag={this.state.projectNameTag[6]} description={this.state.description[6]}
+                    tools={this.state.tools[6]}
+                    buttonLink={this.state.buttonLink[6]} 
+                    /> 
+                    </a>
+                   </div>
+
+                   <div className="project-div">
+                    <a href="https://github.com/learn-academy-2021-echo/pig-latin-porcuslatin" target="_blank"> 
+                    <ProjectsPage imageSrc={this.state.imageSrc[5]} projectNameTag={this.state.projectNameTag[5]} description={this.state.description[5]}
+                    tools={this.state.tools[5]}
+                    buttonLink={this.state.buttonLink[5]} 
+                    /> 
+                    </a>
+                   </div> 
+
+                    <div className="project-div">
+                    <a href="https://gluay88.github.io/" target="_blank"> 
+                    <ProjectsPage imageSrc={this.state.imageSrc[4]} projectNameTag={this.state.projectNameTag[4]} description={this.state.description[4]}
+                    tools={this.state.tools[4]}
+                    buttonLink={this.state.buttonLink[4]} 
+                    /> 
+                    </a>
+                   </div>
                    
 
                     <div className="project-div">
@@ -101,23 +133,7 @@ class Projects extends React.Component {
                     </a>
                    </div>
 
-                   <div className="project-div">
-                    <a href="https://gluay88.github.io/" target="_blank"> 
-                    <ProjectsPage imageSrc={this.state.imageSrc[4]} projectNameTag={this.state.projectNameTag[4]} description={this.state.description[4]}
-                    tools={this.state.tools[4]}
-                    buttonLink={this.state.buttonLink[4]} 
-                    /> 
-                    </a>
-                   </div>
-
-                   <div className="project-div">
-                    <a href="https://github.com/learn-academy-2021-echo/pig-latin-porcuslatin" target="_blank"> 
-                    <ProjectsPage imageSrc={this.state.imageSrc[5]} projectNameTag={this.state.projectNameTag[5]} description={this.state.description[5]}
-                    tools={this.state.tools[5]}
-                    buttonLink={this.state.buttonLink[5]} 
-                    /> 
-                    </a>
-                   </div> 
+                   
                   
                 </div>
              </div>
