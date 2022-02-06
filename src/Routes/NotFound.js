@@ -9,7 +9,7 @@ class NotFound extends Component {
         <div id="not-found-page">
         <img src={robot} alt="404 page not found" />
         
-        <a href="/">Back to homepage</a>
+        <a href="https://gluay88.github.io/portfolio-website/">Back to homepage</a>
         </div>
     )
   }
