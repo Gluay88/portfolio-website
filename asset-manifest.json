@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.4a3d2eca.css",
+    "main.css": "/portfolio-website/static/css/main.588ff079.css",
     "main.js": "/portfolio-website/static/js/main.f14cc265.js",
     "static/media/cat_tinder.jpg": "/portfolio-website/static/media/cat_tinder.00477231f9b929f991ba.jpg",
     "static/media/pagenotfound.png": "/portfolio-website/static/media/pagenotfound.4eba817f59681a3188ef.png",
@@ -29,11 +29,11 @@
     "static/media/css_logo.svg": "/portfolio-website/static/media/css_logo.9aed3f6a82861f6ddfb9d72b5970befa.svg",
     "static/media/JS_logo.svg": "/portfolio-website/static/media/JS_logo.384fd9f7688f68eb9e3caca3975129bb.svg",
     "index.html": "/portfolio-website/index.html",
-    "main.4a3d2eca.css.map": "/portfolio-website/static/css/main.4a3d2eca.css.map",
+    "main.588ff079.css.map": "/portfolio-website/static/css/main.588ff079.css.map",
     "main.f14cc265.js.map": "/portfolio-website/static/js/main.f14cc265.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a3d2eca.css",
+    "static/css/main.588ff079.css",
     "static/js/main.f14cc265.js"
   ]
 }
