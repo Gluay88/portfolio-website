@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 
-import robot from '../assets/pagenotfound.png';
+import robot from '../assets/pagenotfound.svg';
 
 class NotFound extends Component {
   render() {
