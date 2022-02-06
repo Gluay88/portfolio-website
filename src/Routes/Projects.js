@@ -12,7 +12,6 @@ import project_pic6 from '../assets/project_pic6.jpg';
 import catTinder from '../assets/cat_tinder.jpg';
 
 
-
 class Projects extends React.Component {
     constructor(props){
         super(props)
@@ -139,7 +138,8 @@ class Projects extends React.Component {
                   
                 </div>
              </div>
-             
+
+            
             <Footer />
             
         </div>

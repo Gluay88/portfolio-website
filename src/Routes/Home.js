@@ -11,26 +11,24 @@ import HTML_logo from '../assets/html_logo.svg';
 import CSS_logo from '../assets/css_logo.svg';
 import Wordpress from '../assets/wordpress.svg';
 
-
-
 function Home() {
     return (
         <div>
             <Header />
             <AnimationHome />
             <div className="container-all">
-                {/* <ContentHome />    */}
                 
             </div>
-            <div className="software-home">
-                        <img src={Rails} alt="Ruby on Rails logo" />
-                        <img src={Ruby} alt="Ruby logo" />
-                        <img src={React_logo} alt="React logo" />
-                        <img src={JS_logo} alt="JavaScript logo" />
-                        <img src={HTML_logo} alt="HTML logo" />
-                        <img src={CSS_logo} alt="CSS logo" />
-                        <img src={Wordpress} alt="Wordpress logo" />
-                    </div>
+                <div className="software-home">
+                    <img src={Rails} alt="Ruby on Rails logo" />
+                    <img src={Ruby} alt="Ruby logo" />
+                    <img src={React_logo} alt="React logo" />
+                    <img src={JS_logo} alt="JavaScript logo" />
+                    <img src={HTML_logo} alt="HTML logo" />
+                    <img src={CSS_logo} alt="CSS logo" />
+                    <img src={Wordpress} alt="Wordpress logo" />
+                </div>
+               
             <Footer />
         </div>
     )

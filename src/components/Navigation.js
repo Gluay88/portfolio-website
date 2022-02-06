@@ -77,6 +77,8 @@ function Navigation() {
                             <li>
                                 <Link to="/Contact" onClick={()=>setShowMenu(false)}>Contact</Link>
                             </li>
+            
+                            
                         </ul>
                     </animated.div>
                     )

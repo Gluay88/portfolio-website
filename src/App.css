@@ -446,7 +446,44 @@
 .footer-main h2 a:hover {
     color:#FF6D6D;
 }
+#not-found-page {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#not-found-page img {
+    width:60%;
+    height: auto;
+    margin-top: 50px;
+    
+}
 
+#not-found-page a {
+    background-color:#e9b5fe; 
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color:#fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0 10% 0;
+    color:#320a41;
+    
+}
+
+#not-found-page a:hover {
+    background-color: #FF6D6D;
+    color:#ffffff; 
+}
 
 /************** Media Query *******/
 @media screen and (min-width: 1010px) {
