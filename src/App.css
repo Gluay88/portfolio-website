@@ -555,9 +555,34 @@
         
     }
 
+    #about-page {
+        width: 85%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    #aboutPage-photo {
+        width: 85%;
+        height: auto;
+        object-fit:contain;
+        
+    }
+    #aboutText {
+        width: 85%;
+        height: auto;
+        margin-top: 10%;
     
+    }
+
+    .software img {
+        width:25%;
+    }
     
 }
+
 @media screen and (max-width: 600px) and (min-width: 350px) {
    .header {
        margin-bottom: 30px;
@@ -610,25 +635,32 @@
     }
     
     .software {
-        margin-top:860px;
+        margin-top:1%;
     }
 
     .software img {
         width:25%;
     }
-    #aboutPage-photo {
-        width: 85vw;
+    #about-page {
+        width: 85%;
         height: auto;
-        margin: 15px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    #aboutPage-photo {
+        width: 85%;
+        height: auto;
         object-fit:contain;
-       
         
     }
     #aboutText {
-        width: 85vw;
+        width: 85%;
         height: auto;
-        position: absolute;
-        margin-top: 700px;
+        margin-top: 10%;
+    
     }
     
 }
