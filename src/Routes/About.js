@@ -64,7 +64,7 @@ function About() {
                             
                             
 
-                            <h4>Softwares.....................</h4>
+                            <h4>Softwares....................</h4>
                             <p>
                             Ruby on Rails, Ruby, React, JavaScript, Git, GitHub, HTML, CSS, Node.js, TypeScript, Jest, Postgresql, Postman, WordPress, Bootstrap, AutoCAD, SketchUp,AferEffect, Illustrator, PhotoShop, InDesign</p>
                         </div>
