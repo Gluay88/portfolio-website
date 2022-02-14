@@ -118,11 +118,11 @@
     margin: 3px 0 0 0;
      
 }
-.github-icon a, .email-logo a {
+.github-icon a, .email-logo a, .linkedin-logo a {
     color: #ededed;
 }
 
-.github-icon a:hover, .email-logo a:hover {
+.github-icon a:hover, .email-logo a:hover, .linkedin-logo a:hover {
     cursor: pointer;
     color: #e9b5fe
 }
@@ -135,6 +135,15 @@
     right:9.25%;
     margin: 3px 0 0 0;
    
+}
+
+.linkedin-logo {
+    width: 17px;
+    height: auto;
+    position: absolute;
+    right:11.75%;
+    margin: 3px 0 0 0;
+    
 }
 
 /*********** Projects Page ************/
@@ -538,6 +547,10 @@
         right: 11.5%;
     }
 
+    .linkedin-logo {
+        right: 15%;
+    }
+
 }
 
 @media screen and (max-width: 900px) and (min-width: 500px){
@@ -549,6 +562,11 @@
     .email-logo {
         right: 18%;
     }
+
+    .linkedin-logo {
+        right: 25%;
+    }
+    
 
     .gluay a {
         margin-bottom: 100px;
