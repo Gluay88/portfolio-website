@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.038b0690.css",
-    "main.js": "/portfolio-website/static/js/main.04a48885.js",
+    "main.css": "/portfolio-website/static/css/main.c8bc9783.css",
+    "main.js": "/portfolio-website/static/js/main.5ea45dfa.js",
     "static/media/cat_tinder.jpg": "/portfolio-website/static/media/cat_tinder.00477231f9b929f991ba.jpg",
+    "static/media/shlf_app.jpg": "/portfolio-website/static/media/shlf_app.79df2c88f07f264b4f2d.jpg",
     "static/media/project_pic5.jpg": "/portfolio-website/static/media/project_pic5.15af30dda1948b9caa47.jpg",
+    "static/media/enciv_icon.jpg": "/portfolio-website/static/media/enciv_icon.3a45f6221e52af40c4ed.jpg",
     "static/media/gluay_photo.jpg": "/portfolio-website/static/media/gluay_photo.cd317d50f83fa4ca9958.jpg",
     "static/media/laptop.png": "/portfolio-website/static/media/laptop.ead9b16cf3cfffb103ff.png",
     "static/media/project_pic4.jpg": "/portfolio-website/static/media/project_pic4.1934a995cef741830cc4.jpg",
     "static/media/project_pic1.jpg": "/portfolio-website/static/media/project_pic1.0d5c9bd48eb4370ece26.jpg",
-    "static/media/gluayLaptop.png": "/portfolio-website/static/media/gluayLaptop.b6cfc3260da2ef628892.png",
     "static/media/project_pic6.jpg": "/portfolio-website/static/media/project_pic6.61a3d9c7cfaf25d204d1.jpg",
     "static/media/project_pic3.jpg": "/portfolio-website/static/media/project_pic3.ffbe5e968c014447f23a.jpg",
     "static/media/pagenotfound.svg": "/portfolio-website/static/media/pagenotfound.0be7567c576adcef8eba28559649ba3b.svg",
@@ -29,11 +30,11 @@
     "static/media/css_logo.svg": "/portfolio-website/static/media/css_logo.9aed3f6a82861f6ddfb9d72b5970befa.svg",
     "static/media/JS_logo.svg": "/portfolio-website/static/media/JS_logo.384fd9f7688f68eb9e3caca3975129bb.svg",
     "index.html": "/portfolio-website/index.html",
-    "main.038b0690.css.map": "/portfolio-website/static/css/main.038b0690.css.map",
-    "main.04a48885.js.map": "/portfolio-website/static/js/main.04a48885.js.map"
+    "main.c8bc9783.css.map": "/portfolio-website/static/css/main.c8bc9783.css.map",
+    "main.5ea45dfa.js.map": "/portfolio-website/static/js/main.5ea45dfa.js.map"
   },
   "entrypoints": [
-    "static/css/main.038b0690.css",
-    "static/js/main.04a48885.js"
+    "static/css/main.c8bc9783.css",
+    "static/js/main.5ea45dfa.js"
   ]
 }
