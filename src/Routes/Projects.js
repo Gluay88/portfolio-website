@@ -12,6 +12,7 @@ import project_pic6 from "../assets/project_pic6.jpg";
 import catTinder from "../assets/cat_tinder.jpg";
 import shlfApp from "../assets/shlf_app.jpg";
 import EnCiv from "../assets/enciv_icon.jpg";
+import LigthBulbs from "../assets/light_bulbs.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class Projects extends React.Component {
         project_pic4,
         project_pic5,
         project_pic6,
+        LigthBulbs,
         catTinder,
         shlfApp,
         EnCiv,
@@ -36,6 +38,7 @@ class Projects extends React.Component {
         "Wisdom Bistro Kirkland",
         "Crystall Skulls",
         "PigLatin - React Game",
+        "Light Bulbs",
         "Cat Tinder",
         "Shlf App",
         "EnCiv",
@@ -48,6 +51,7 @@ class Projects extends React.Component {
         "Asian fusion restaurant",
         "Tresture hunter game",
         "Language game",
+        "React game",
         "Full Stack App",
         "Full Stack App",
         "Full Stack App",
@@ -59,6 +63,7 @@ class Projects extends React.Component {
         "Javascript, HTML, CSS, Illustrator, PhotoShop",
         "WordPress, PHP, HTML, CSS, Illustrator, PhotoShop",
         "JavaScript, HTML, CSS, Illustrator, PhotoShop",
+        "React, JavaScript, HTML, CSS, Illustrator",
         "React, JavaScript, HTML, CSS, Illustrator",
         "Rails, React, JavaScript, HTML, CSS, Illustrator",
         "Rails, React, JavaScript, HTML, CSS, Illustrator",
@@ -83,7 +88,7 @@ class Projects extends React.Component {
         </a>,
 
         <a
-          href="https://gluay88.github.io/portfolio-website/"
+          href="https://superiorsidinginc.net/"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -107,7 +112,7 @@ class Projects extends React.Component {
         </a>,
 
         <a
-          href="https://github.com/learn-academy-2021-echo/pig-latin-porcuslatin"
+          href="https://pig-latin-game.herokuapp.com/"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -115,7 +120,15 @@ class Projects extends React.Component {
         </a>,
 
         <a
-          href="https://github.com/learn-academy-2021-echo/cat-tinder-frontend-sphinx"
+        href="https://light-bulbs-project.herokuapp.com/"
+        target="_blank"
+        style={{ color: "white", textDecoration: "none" }}
+        >
+        More..
+        </a>,
+
+        <a
+          href="https://cat-tinder-gluay.herokuapp.com/catshow/3"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -151,6 +164,18 @@ class Projects extends React.Component {
             <div className="project-div">
               <a href="https://github.com/EnCiv/undebate-ssp" target="_blank">
                 <ProjectsPage
+                  imageSrc={this.state.imageSrc[9]}
+                  projectNameTag={this.state.projectNameTag[9]}
+                  description={this.state.description[9]}
+                  tools={this.state.tools[9]}
+                  buttonLink={this.state.buttonLink[9]}
+                />
+              </a>
+            </div>
+
+            <div className="project-div">
+              <a href="http://shlf-app.herokuapp.com/" target="_blank">
+                <ProjectsPage
                   imageSrc={this.state.imageSrc[8]}
                   projectNameTag={this.state.projectNameTag[8]}
                   description={this.state.description[8]}
@@ -161,7 +186,10 @@ class Projects extends React.Component {
             </div>
 
             <div className="project-div">
-              <a href="http://shlf-app.herokuapp.com/" target="_blank">
+              <a
+                href="https://cat-tinder-gluay.herokuapp.com/catshow/3"
+                target="_blank"
+              >
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[7]}
                   projectNameTag={this.state.projectNameTag[7]}
@@ -174,7 +202,7 @@ class Projects extends React.Component {
 
             <div className="project-div">
               <a
-                href="https://github.com/learn-academy-2021-echo/cat-tinder-frontend-sphinx"
+                href="https://light-bulbs-project.herokuapp.com/"
                 target="_blank"
               >
                 <ProjectsPage
@@ -189,7 +217,7 @@ class Projects extends React.Component {
 
             <div className="project-div">
               <a
-                href="https://github.com/learn-academy-2021-echo/pig-latin-porcuslatin"
+                href="https://pig-latin-game.herokuapp.com/"
                 target="_blank"
               >
                 <ProjectsPage
@@ -243,7 +271,7 @@ class Projects extends React.Component {
 
             <div className="project-div">
               <a
-                href="https://gluay88.github.io/portfolio-website/"
+                href="https://superiorsidinginc.net/"
                 target="_blank"
               >
                 <ProjectsPage
