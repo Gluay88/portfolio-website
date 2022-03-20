@@ -13,6 +13,7 @@ import catTinder from "../assets/cat_tinder.jpg";
 import shlfApp from "../assets/shlf_app.jpg";
 import EnCiv from "../assets/enciv_icon.jpg";
 import LigthBulbs from "../assets/light_bulbs.jpg";
+import LloydPestControl from "../assets/lloyd-pest-control.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class Projects extends React.Component {
         catTinder,
         shlfApp,
         EnCiv,
+        LloydPestControl,
       ],
 
       projectNameTag: [
@@ -42,6 +44,7 @@ class Projects extends React.Component {
         "Cat Tinder",
         "Shlf App",
         "EnCiv",
+        "Lloy Pest Control"
       ],
 
       description: [
@@ -55,6 +58,7 @@ class Projects extends React.Component {
         "Full Stack App",
         "Full Stack App",
         "Full Stack App",
+        "Ruby on Rails",
       ],
 
       tools: [
@@ -68,6 +72,7 @@ class Projects extends React.Component {
         "Rails, React, JavaScript, HTML, CSS, Illustrator",
         "Rails, React, JavaScript, HTML, CSS, Illustrator",
         "MongoDB, React, Storybook, JavaScript, HTML, CSS",
+        "Work in process - Rails, CSV, JavaScript, HTML, CSS",
       ],
 
       buttonLink: [
@@ -150,6 +155,13 @@ class Projects extends React.Component {
         >
           More..
         </a>,
+        <a
+        href="https://github.com/Gluay88/lloyd-pest-control"
+        target="_blank"
+        style={{ color: "white", textDecoration: "none" }}
+      >
+        More..
+      </a>,
       ],
     };
   }
@@ -161,6 +173,18 @@ class Projects extends React.Component {
           <h2>Projects</h2>
 
           <div className="projects_container">
+          <div className="project-div">
+              <a href="https://github.com/Gluay88/lloyd-pest-control" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[10]}
+                  projectNameTag={this.state.projectNameTag[10]}
+                  description={this.state.description[10]}
+                  tools={this.state.tools[10]}
+                  buttonLink={this.state.buttonLink[10]}
+                />
+              </a>
+            </div>
+
             <div className="project-div">
               <a href="https://github.com/EnCiv/undebate-ssp" target="_blank">
                 <ProjectsPage
