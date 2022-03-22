@@ -156,7 +156,7 @@ class Projects extends React.Component {
           More..
         </a>,
         <a
-        href="https://github.com/Gluay88/lloyd-pest-control"
+        href="https://lloyd-pest-control.herokuapp.com/"
         target="_blank"
         style={{ color: "white", textDecoration: "none" }}
       >
@@ -174,7 +174,7 @@ class Projects extends React.Component {
 
           <div className="projects_container">
           <div className="project-div">
-              <a href="https://github.com/Gluay88/lloyd-pest-control" target="_blank">
+              <a href="https://lloyd-pest-control.herokuapp.com/" target="_blank">
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[10]}
                   projectNameTag={this.state.projectNameTag[10]}
