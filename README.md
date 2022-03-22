@@ -1,5 +1,8 @@
 ### Deploy 
-- yarn run deploy 
+yarn run deploy 
+
+### My portfolilo
+https://gluay88.github.io/portfolio-website/
 
 # Getting Started with Create React App
 
