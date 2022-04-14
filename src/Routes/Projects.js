@@ -14,6 +14,7 @@ import shlfApp from "../assets/shlf_app.jpg";
 import EnCiv from "../assets/enciv_icon.jpg";
 import LigthBulbs from "../assets/light_bulbs.jpg";
 import LloydPestControl from "../assets/lloyd-pest-control.jpg";
+import PrimeVideo from "../assets/prime-video.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class Projects extends React.Component {
         shlfApp,
         EnCiv,
         LloydPestControl,
+        PrimeVideo,
       ],
 
       projectNameTag: [
@@ -44,7 +46,8 @@ class Projects extends React.Component {
         "Cat Tinder",
         "Shlf App",
         "EnCiv",
-        "Lloy Pest Control"
+        "Lloy Pest Control",
+        "Prime Video",
       ],
 
       description: [
@@ -59,6 +62,7 @@ class Projects extends React.Component {
         "Full Stack App",
         "Full Stack App",
         "Ruby on Rails",
+        "UI/UX API",
       ],
 
       tools: [
@@ -73,6 +77,7 @@ class Projects extends React.Component {
         "Rails, React, JavaScript, HTML, CSS, Illustrator",
         "MongoDB, React, Storybook, JavaScript, HTML, CSS",
         "Work in process - Rails, CSV, JavaScript, HTML, CSS",
+        "Work in process - JavaScript, HTML, CSS, API",
       ],
 
       buttonLink: [
@@ -125,11 +130,11 @@ class Projects extends React.Component {
         </a>,
 
         <a
-        href="https://light-bulbs-project.herokuapp.com/"
-        target="_blank"
-        style={{ color: "white", textDecoration: "none" }}
+          href="https://light-bulbs-project.herokuapp.com/"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
         >
-        More..
+          More..
         </a>,
 
         <a
@@ -156,12 +161,19 @@ class Projects extends React.Component {
           More..
         </a>,
         <a
-        href="https://lloyd-pest-control.herokuapp.com/"
-        target="_blank"
-        style={{ color: "white", textDecoration: "none" }}
-      >
-        More..
-      </a>,
+          href="https://lloyd-pest-control.herokuapp.com/"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
+        <a
+          href="https://62587a976ff44006313b265c--musical-tartufo-215d4b.netlify.app/"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
       ],
     };
   }
@@ -173,8 +185,25 @@ class Projects extends React.Component {
           <h2>Projects</h2>
 
           <div className="projects_container">
-          <div className="project-div">
-              <a href="https://lloyd-pest-control.herokuapp.com/" target="_blank">
+            <div className="project-div">
+              <a
+                href="https://62587a976ff44006313b265c--musical-tartufo-215d4b.netlify.app/"
+                target="_blank"
+              >
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[11]}
+                  projectNameTag={this.state.projectNameTag[11]}
+                  description={this.state.description[11]}
+                  tools={this.state.tools[11]}
+                  buttonLink={this.state.buttonLink[11]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
+              <a
+                href="https://lloyd-pest-control.herokuapp.com/"
+                target="_blank"
+              >
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[10]}
                   projectNameTag={this.state.projectNameTag[10]}
@@ -240,10 +269,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="project-div">
-              <a
-                href="https://pig-latin-game.herokuapp.com/"
-                target="_blank"
-              >
+              <a href="https://pig-latin-game.herokuapp.com/" target="_blank">
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[5]}
                   projectNameTag={this.state.projectNameTag[5]}
@@ -294,10 +320,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="project-div">
-              <a
-                href="https://superiorsidinginc.net/"
-                target="_blank"
-              >
+              <a href="https://superiorsidinginc.net/" target="_blank">
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[2]}
                   projectNameTag={this.state.projectNameTag[2]}
