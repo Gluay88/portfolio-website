@@ -50,6 +50,7 @@ class Projects extends React.Component {
         "EnCiv",
         "Lloy Pest Control",
         "Prime Video",
+        "TopNotch Tech",
       ],
 
       description: [
@@ -65,6 +66,7 @@ class Projects extends React.Component {
         "Full Stack App",
         "Ruby on Rails",
         "UI/UX API",
+        "MERN-Ecommerce",
       ],
 
       tools: [
@@ -80,7 +82,7 @@ class Projects extends React.Component {
         "MongoDB, React, Storybook, JavaScript, HTML, CSS",
         "Rails, CSV, JavaScript, HTML, CSS",
         "Work in process - JavaScript, HTML, CSS, API",
-        "Work in process - React, Node, Express, MongoDB, JavaScript, HTML, CSS",
+        "Work in process - React, Node, Express, MongoDB",
       ],
 
       buttonLink: [
