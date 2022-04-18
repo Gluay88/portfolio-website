@@ -15,6 +15,7 @@ import EnCiv from "../assets/enciv_icon.jpg";
 import LigthBulbs from "../assets/light_bulbs.jpg";
 import LloydPestControl from "../assets/lloyd-pest-control.jpg";
 import PrimeVideo from "../assets/prime-video.jpg";
+import TopNotchTech from "../assets/top-notch-tech.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -33,6 +34,7 @@ class Projects extends React.Component {
         EnCiv,
         LloydPestControl,
         PrimeVideo,
+        TopNotchTech,
       ],
 
       projectNameTag: [
@@ -76,8 +78,9 @@ class Projects extends React.Component {
         "Rails, React, JavaScript, HTML, CSS, Illustrator",
         "Rails, React, JavaScript, HTML, CSS, Illustrator",
         "MongoDB, React, Storybook, JavaScript, HTML, CSS",
-        "Work in process - Rails, CSV, JavaScript, HTML, CSS",
+        "Rails, CSV, JavaScript, HTML, CSS",
         "Work in process - JavaScript, HTML, CSS, API",
+        "Work in process - React, Node, Express, MongoDB, JavaScript, HTML, CSS",
       ],
 
       buttonLink: [
@@ -174,6 +177,13 @@ class Projects extends React.Component {
         >
           More..
         </a>,
+        <a
+        href="https://magnificent-blini-b769ee.netlify.app/"
+        target="_blank"
+        style={{ color: "white", textDecoration: "none" }}
+      >
+        More..
+      </a>
       ],
     };
   }
@@ -185,6 +195,20 @@ class Projects extends React.Component {
           <h2>Projects</h2>
 
           <div className="projects_container">
+          <div className="project-div">
+              <a
+                href="https://magnificent-blini-b769ee.netlify.app/"
+                target="_blank"
+              >
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[12]}
+                  projectNameTag={this.state.projectNameTag[12]}
+                  description={this.state.description[12]}
+                  tools={this.state.tools[12]}
+                  buttonLink={this.state.buttonLink[12]}
+                />
+              </a>
+            </div>
             <div className="project-div">
               <a
                 href="https://62587a976ff44006313b265c--musical-tartufo-215d4b.netlify.app/"
