@@ -16,6 +16,7 @@ import LigthBulbs from "../assets/light_bulbs.jpg";
 import LloydPestControl from "../assets/lloyd-pest-control.jpg";
 import PrimeVideo from "../assets/prime-video.jpg";
 import TopNotchTech from "../assets/top-notch-tech.jpg";
+import JWTAuth from "../assets/JWT.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class Projects extends React.Component {
         LloydPestControl,
         PrimeVideo,
         TopNotchTech,
+        JWTAuth,
       ],
 
       projectNameTag: [
@@ -49,8 +51,9 @@ class Projects extends React.Component {
         "Shlf App",
         "EnCiv",
         "Lloy Pest Control",
-        "Prime Video",
-        "TopNotch Tech",
+        "Prime Video (Work in process)",
+        "TopNotch Tech (Work in process)",
+        "myBucketList",
       ],
 
       description: [
@@ -67,6 +70,7 @@ class Projects extends React.Component {
         "Ruby on Rails",
         "UI/UX API",
         "MERN-Ecommerce",
+        "JWT Authentication",
       ],
 
       tools: [
@@ -81,8 +85,9 @@ class Projects extends React.Component {
         "Rails, React, JavaScript, HTML, CSS, Illustrator",
         "MongoDB, React, Storybook, JavaScript, HTML, CSS",
         "Rails, CSV, JavaScript, HTML, CSS",
-        "Work in process - JavaScript, HTML, CSS, API",
-        "Work in process - React, Node, Express, MongoDB",
+        "JavaScript, HTML, CSS, API",
+        "React, Node, Express, MongoDB",
+        "JWT, Redux, React, Node, Express, MongoDB",
       ],
 
       buttonLink: [
@@ -180,12 +185,19 @@ class Projects extends React.Component {
           More..
         </a>,
         <a
-        href="https://magnificent-blini-b769ee.netlify.app/"
-        target="_blank"
-        style={{ color: "white", textDecoration: "none" }}
-      >
-        More..
-      </a>
+          href="https://magnificent-blini-b769ee.netlify.app/"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
+        <a
+          href="https://github.com/Gluay88/JWT"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
       ],
     };
   }
@@ -195,9 +207,8 @@ class Projects extends React.Component {
         <Header />
         <div className="container-all">
           <h2>Projects</h2>
-
           <div className="projects_container">
-          <div className="project-div">
+            <div className="project-div">
               <a
                 href="https://magnificent-blini-b769ee.netlify.app/"
                 target="_blank"
@@ -211,6 +222,19 @@ class Projects extends React.Component {
                 />
               </a>
             </div>
+
+            <div className="project-div">
+              <a href="https://github.com/Gluay88/JWT" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[13]}
+                  projectNameTag={this.state.projectNameTag[13]}
+                  description={this.state.description[13]}
+                  tools={this.state.tools[13]}
+                  buttonLink={this.state.buttonLink[13]}
+                />
+              </a>
+            </div>
+
             <div className="project-div">
               <a
                 href="https://62587a976ff44006313b265c--musical-tartufo-215d4b.netlify.app/"
