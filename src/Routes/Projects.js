@@ -153,7 +153,7 @@ class Projects extends React.Component {
         </a>,
 
         <a
-          href="https://cat-tinder-gluay.herokuapp.com/catshow/3"
+          href="https://github.com/Gluay88/cat-tinder-backend"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -271,6 +271,53 @@ class Projects extends React.Component {
                 />
               </a>
             </div>
+            <div className="project-div">
+              <a href="https://gluay88.github.io/" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[4]}
+                  projectNameTag={this.state.projectNameTag[4]}
+                  description={this.state.description[4]}
+                  tools={this.state.tools[4]}
+                  buttonLink={this.state.buttonLink[4]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
+              <a href="https://github.com/EnCiv/undebate-ssp" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[9]}
+                  projectNameTag={this.state.projectNameTag[9]}
+                  description={this.state.description[9]}
+                  tools={this.state.tools[9]}
+                  buttonLink={this.state.buttonLink[9]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
+              <a
+                href="https://new.mgnonline.com/BMO/Canvas?tab=Graphics&id=0"
+                target="_blank"
+              >
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[1]}
+                  projectNameTag={this.state.projectNameTag[1]}
+                  description={this.state.description[1]}
+                  tools={this.state.tools[1]}
+                  buttonLink={this.state.buttonLink[1]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
+              <a href="http://shlf-app.herokuapp.com/" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[8]}
+                  projectNameTag={this.state.projectNameTag[8]}
+                  description={this.state.description[8]}
+                  tools={this.state.tools[8]}
+                  buttonLink={this.state.buttonLink[8]}
+                />
+              </a>
+            </div>
 
             <div className="project-div">
               <a
@@ -286,34 +333,9 @@ class Projects extends React.Component {
                 />
               </a>
             </div>
-
-            <div className="project-div">
-              <a href="https://github.com/EnCiv/undebate-ssp" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[9]}
-                  projectNameTag={this.state.projectNameTag[9]}
-                  description={this.state.description[9]}
-                  tools={this.state.tools[9]}
-                  buttonLink={this.state.buttonLink[9]}
-                />
-              </a>
-            </div>
-
-            <div className="project-div">
-              <a href="http://shlf-app.herokuapp.com/" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[8]}
-                  projectNameTag={this.state.projectNameTag[8]}
-                  description={this.state.description[8]}
-                  tools={this.state.tools[8]}
-                  buttonLink={this.state.buttonLink[8]}
-                />
-              </a>
-            </div>
-
             <div className="project-div">
               <a
-                href="https://cat-tinder-gluay.herokuapp.com/catshow/3"
+                href="https://github.com/Gluay88/cat-tinder-backend"
                 target="_blank"
               >
                 <ProjectsPage
@@ -322,6 +344,17 @@ class Projects extends React.Component {
                   description={this.state.description[7]}
                   tools={this.state.tools[7]}
                   buttonLink={this.state.buttonLink[7]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
+              <a href="http://www.719mangosteen.com/" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[0]}
+                  projectNameTag={this.state.projectNameTag[0]}
+                  description={this.state.description[0]}
+                  tools={this.state.tools[0]}
+                  buttonLink={this.state.buttonLink[0]}
                 />
               </a>
             </div>
@@ -349,45 +382,6 @@ class Projects extends React.Component {
                   description={this.state.description[5]}
                   tools={this.state.tools[5]}
                   buttonLink={this.state.buttonLink[5]}
-                />
-              </a>
-            </div>
-
-            <div className="project-div">
-              <a href="https://gluay88.github.io/" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[4]}
-                  projectNameTag={this.state.projectNameTag[4]}
-                  description={this.state.description[4]}
-                  tools={this.state.tools[4]}
-                  buttonLink={this.state.buttonLink[4]}
-                />
-              </a>
-            </div>
-
-            <div className="project-div">
-              <a href="http://www.719mangosteen.com/" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[0]}
-                  projectNameTag={this.state.projectNameTag[0]}
-                  description={this.state.description[0]}
-                  tools={this.state.tools[0]}
-                  buttonLink={this.state.buttonLink[0]}
-                />
-              </a>
-            </div>
-
-            <div className="project-div">
-              <a
-                href="https://new.mgnonline.com/BMO/Canvas?tab=Graphics&id=0"
-                target="_blank"
-              >
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[1]}
-                  projectNameTag={this.state.projectNameTag[1]}
-                  description={this.state.description[1]}
-                  tools={this.state.tools[1]}
-                  buttonLink={this.state.buttonLink[1]}
                 />
               </a>
             </div>
