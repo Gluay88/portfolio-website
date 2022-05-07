@@ -221,16 +221,27 @@ class Projects extends React.Component {
           <h2>Projects</h2>
           <div className="projects_container">
             <div className="project-div">
-              <a
-                href="https://gluay.com/"
-                target="_blank"
-              >
+              <a href="https://gluay.com/" target="_blank">
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[14]}
                   projectNameTag={this.state.projectNameTag[14]}
                   description={this.state.description[14]}
                   tools={this.state.tools[14]}
                   buttonLink={this.state.buttonLink[14]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
+              <a
+                href="https://lloyd-pest-control.herokuapp.com/"
+                target="_blank"
+              >
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[10]}
+                  projectNameTag={this.state.projectNameTag[10]}
+                  description={this.state.description[10]}
+                  tools={this.state.tools[10]}
+                  buttonLink={this.state.buttonLink[10]}
                 />
               </a>
             </div>
@@ -272,20 +283,6 @@ class Projects extends React.Component {
                   description={this.state.description[11]}
                   tools={this.state.tools[11]}
                   buttonLink={this.state.buttonLink[11]}
-                />
-              </a>
-            </div>
-            <div className="project-div">
-              <a
-                href="https://lloyd-pest-control.herokuapp.com/"
-                target="_blank"
-              >
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[10]}
-                  projectNameTag={this.state.projectNameTag[10]}
-                  description={this.state.description[10]}
-                  tools={this.state.tools[10]}
-                  buttonLink={this.state.buttonLink[10]}
                 />
               </a>
             </div>
