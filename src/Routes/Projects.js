@@ -97,7 +97,7 @@ class Projects extends React.Component {
 
       buttonLink: [
         <a
-          href="http://www.719mangosteen.com/"
+          href="http://gluita.com/"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -348,7 +348,7 @@ class Projects extends React.Component {
               </a>
             </div>
             <div className="project-div">
-              <a href="http://www.719mangosteen.com/" target="_blank">
+              <a href="http://gluita.com/" target="_blank">
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[0]}
                   projectNameTag={this.state.projectNameTag[0]}
