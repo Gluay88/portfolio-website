@@ -17,7 +17,6 @@ import LloydPestControl from "../assets/lloyd-pest-control.jpg";
 import PrimeVideo from "../assets/prime-video.jpg";
 import TopNotchTech from "../assets/top-notch-tech.jpg";
 import JWTAuth from "../assets/JWT.jpg";
-import MorningMoms from "../assets/morningmoms.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -38,7 +37,6 @@ class Projects extends React.Component {
         PrimeVideo,
         TopNotchTech,
         JWTAuth,
-        MorningMoms,
       ],
 
       projectNameTag: [
@@ -74,7 +72,6 @@ class Projects extends React.Component {
         "UI/UX API",
         "MERN-Ecommerce",
         "JWT Authentication",
-        "Shopify Theme Development",
       ],
 
       tools: [
@@ -92,7 +89,6 @@ class Projects extends React.Component {
         "JavaScript, HTML, CSS, API",
         "React, Node, Express, MongoDB",
         "JWT, Redux, React, Node, Express, MongoDB",
-        "PHP, JavaScript, JQuery, SASS, Node, Git",
       ],
 
       buttonLink: [
@@ -203,13 +199,6 @@ class Projects extends React.Component {
         >
           More..
         </a>,
-        <a
-          href="https://gluay.com/"
-          target="_blank"
-          style={{ color: "white", textDecoration: "none" }}
-        >
-          More..
-        </a>,
       ],
     };
   }
@@ -220,17 +209,6 @@ class Projects extends React.Component {
         <div className="container-all">
           <h2>Projects</h2>
           <div className="projects_container">
-            <div className="project-div">
-              <a href="https://gluay.com/" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[14]}
-                  projectNameTag={this.state.projectNameTag[14]}
-                  description={this.state.description[14]}
-                  tools={this.state.tools[14]}
-                  buttonLink={this.state.buttonLink[14]}
-                />
-              </a>
-            </div>
             <div className="project-div">
               <a
                 href="https://lloyd-pest-control.herokuapp.com/"
