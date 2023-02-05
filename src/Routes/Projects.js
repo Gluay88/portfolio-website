@@ -17,6 +17,9 @@ import LloydPestControl from "../assets/lloyd-pest-control.jpg";
 import PrimeVideo from "../assets/prime-video.jpg";
 import TopNotchTech from "../assets/top-notch-tech.jpg";
 import JWTAuth from "../assets/JWT.jpg";
+import SneakyOnes from "../assets/sneakyones.jpg";
+import Firebase from "../assets/firebase.jpg";
+import LegoCars from "../assets/LegoCars.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -37,6 +40,9 @@ class Projects extends React.Component {
         PrimeVideo,
         TopNotchTech,
         JWTAuth,
+        SneakyOnes,
+        Firebase,
+        LegoCars,
       ],
 
       projectNameTag: [
@@ -54,7 +60,9 @@ class Projects extends React.Component {
         "Prime Video (Work in process)",
         "TopNotch Tech (Work in process)",
         "myBucketList",
-        "Morning Moms",
+        "Sneaky Ones",
+        "Firebase Authentication",
+        "Lego Cars",
       ],
 
       description: [
@@ -72,6 +80,9 @@ class Projects extends React.Component {
         "UI/UX API",
         "MERN-Ecommerce",
         "JWT Authentication",
+        "Full Stack App",
+        "Full Stack App",
+        "Vite-React E-Commerce",
       ],
 
       tools: [
@@ -89,6 +100,9 @@ class Projects extends React.Component {
         "JavaScript, HTML, CSS, API",
         "React, Node, Express, MongoDB",
         "JWT, Redux, React, Node, Express, MongoDB",
+        "Node, Express, MySQL, React",
+        "Firebase, Google Console, TypeScript, React",
+        "Google Autocomplete,Vite, React, TypeScript",
       ],
 
       buttonLink: [
@@ -133,7 +147,7 @@ class Projects extends React.Component {
         </a>,
 
         <a
-          href="https://pig-latin-game.herokuapp.com/"
+          href="https://github.com/Gluay88/pig-latin"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -141,7 +155,7 @@ class Projects extends React.Component {
         </a>,
 
         <a
-          href="https://light-bulbs-project.herokuapp.com/"
+          href="https://github.com/Gluay88/light-bulbs"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -157,7 +171,7 @@ class Projects extends React.Component {
         </a>,
 
         <a
-          href="http://shlf-app.herokuapp.com/"
+          href="https://github.com/Rydg-Tech/shlf-app"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -172,7 +186,7 @@ class Projects extends React.Component {
           More..
         </a>,
         <a
-          href="https://lloyd-pest-control.herokuapp.com/"
+          href="https://github.com/Gluay88/lloyd-pest-control"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -199,6 +213,27 @@ class Projects extends React.Component {
         >
           More..
         </a>,
+        <a
+          href="https://github.com/Gluay88/sneakyones"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
+        <a
+          href="https://github.com/Gluay88/firebase-fullstack"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
+        <a
+          href="https://lego-cars-gluay.netlify.app/"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
       ],
     };
   }
@@ -208,10 +243,47 @@ class Projects extends React.Component {
         <Header />
         <div className="container-all">
           <h2>Projects</h2>
+
           <div className="projects_container">
             <div className="project-div">
+              <a href="https://lego-cars-gluay.netlify.app/" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[16]}
+                  projectNameTag={this.state.projectNameTag[16]}
+                  description={this.state.description[16]}
+                  tools={this.state.tools[16]}
+                  buttonLink={this.state.buttonLink[16]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
               <a
-                href="https://lloyd-pest-control.herokuapp.com/"
+                href="https://github.com/Gluay88/firebase-fullstack"
+                target="_blank"
+              >
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[15]}
+                  projectNameTag={this.state.projectNameTag[15]}
+                  description={this.state.description[15]}
+                  tools={this.state.tools[15]}
+                  buttonLink={this.state.buttonLink[15]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
+              <a href="https://github.com/Gluay88/sneakyones" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[14]}
+                  projectNameTag={this.state.projectNameTag[14]}
+                  description={this.state.description[14]}
+                  tools={this.state.tools[14]}
+                  buttonLink={this.state.buttonLink[14]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
+              <a
+                href="https://github.com/Gluay88/lloyd-pest-control"
                 target="_blank"
               >
                 <ProjectsPage
@@ -286,7 +358,7 @@ class Projects extends React.Component {
               </a>
             </div>
             <div className="project-div">
-              <a href="http://shlf-app.herokuapp.com/" target="_blank">
+              <a href="https://github.com/Rydg-Tech/shlf-app" target="_blank">
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[8]}
                   projectNameTag={this.state.projectNameTag[8]}
@@ -338,10 +410,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="project-div">
-              <a
-                href="https://light-bulbs-project.herokuapp.com/"
-                target="_blank"
-              >
+              <a href="https://github.com/Gluay88/light-bulbs" target="_blank">
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[6]}
                   projectNameTag={this.state.projectNameTag[6]}
@@ -353,7 +422,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="project-div">
-              <a href="https://pig-latin-game.herokuapp.com/" target="_blank">
+              <a href="https://github.com/Gluay88/pig-latin" target="_blank">
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[5]}
                   projectNameTag={this.state.projectNameTag[5]}
