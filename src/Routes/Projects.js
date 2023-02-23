@@ -228,7 +228,7 @@ class Projects extends React.Component {
           More..
         </a>,
         <a
-          href="https://lego-cars-gluay.netlify.app/"
+          href="https://lego-car-shop-gluay.netlify.app/"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -246,7 +246,10 @@ class Projects extends React.Component {
 
           <div className="projects_container">
             <div className="project-div">
-              <a href="https://lego-cars-gluay.netlify.app/" target="_blank">
+              <a
+                href="https://lego-car-shop-gluay.netlify.app/"
+                target="_blank"
+              >
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[16]}
                   projectNameTag={this.state.projectNameTag[16]}
