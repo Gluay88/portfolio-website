@@ -20,6 +20,7 @@ import JWTAuth from "../assets/JWT.jpg";
 import SneakyOnes from "../assets/sneakyones.jpg";
 import Firebase from "../assets/firebase.jpg";
 import LegoCars from "../assets/LegoCars.jpg";
+import Friends from "../assets/80sFriends.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -43,6 +44,7 @@ class Projects extends React.Component {
         SneakyOnes,
         Firebase,
         LegoCars,
+        Friends,
       ],
 
       projectNameTag: [
@@ -63,6 +65,7 @@ class Projects extends React.Component {
         "Sneaky Ones",
         "Firebase Authentication",
         "Lego Cars",
+        "80s Friends",
       ],
 
       description: [
@@ -83,6 +86,7 @@ class Projects extends React.Component {
         "Full Stack App",
         "Full Stack App",
         "Vite-React E-Commerce",
+        "Full Stack App",
       ],
 
       tools: [
@@ -103,6 +107,7 @@ class Projects extends React.Component {
         "Node, Express, MySQL, React",
         "Firebase, Google Console, TypeScript, React",
         "Google Autocomplete,Vite, React, TypeScript",
+        "Django/Python and React",
       ],
 
       buttonLink: [
@@ -234,6 +239,13 @@ class Projects extends React.Component {
         >
           More..
         </a>,
+        <a
+          href="https://80sfriends.netlify.app/"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
       ],
     };
   }
@@ -245,6 +257,18 @@ class Projects extends React.Component {
           <h2>Projects</h2>
 
           <div className="projects_container">
+            <div className="project-div">
+              <a href="https://80sfriends.netlify.app/" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[17]}
+                  projectNameTag={this.state.projectNameTag[17]}
+                  description={this.state.description[17]}
+                  tools={this.state.tools[17]}
+                  buttonLink={this.state.buttonLink[17]}
+                />
+              </a>
+            </div>
+
             <div className="project-div">
               <a
                 href="https://lego-car-shop-gluay.netlify.app/"
