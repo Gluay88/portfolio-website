@@ -21,6 +21,7 @@ import SneakyOnes from "../assets/sneakyones.jpg";
 import Firebase from "../assets/firebase.jpg";
 import LegoCars from "../assets/LegoCars.jpg";
 import Friends from "../assets/80sFriends.jpg";
+import ChatWithMeGPT from "../assets/ChatWithMe.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -45,6 +46,7 @@ class Projects extends React.Component {
         Firebase,
         LegoCars,
         Friends,
+        ChatWithMeGPT,
       ],
 
       projectNameTag: [
@@ -66,6 +68,7 @@ class Projects extends React.Component {
         "Firebase Authentication",
         "Lego Cars",
         "80s Friends",
+        "ChatWithMeGPT",
       ],
 
       description: [
@@ -87,6 +90,7 @@ class Projects extends React.Component {
         "Full Stack App",
         "Vite-React E-Commerce",
         "Full Stack App",
+        "OpenAI ChatGPT App",
       ],
 
       tools: [
@@ -108,6 +112,7 @@ class Projects extends React.Component {
         "Firebase, Google Console, TypeScript, React",
         "Google Autocomplete,Vite, React, TypeScript",
         "Django/Python and React",
+        "OpenAI, ChatGPT, Node, JavaScript",
       ],
 
       buttonLink: [
@@ -246,6 +251,13 @@ class Projects extends React.Component {
         >
           More..
         </a>,
+        <a
+          href="https://github.com/Gluay88/ChatWithMeGPT"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
       ],
     };
   }
@@ -257,6 +269,21 @@ class Projects extends React.Component {
           <h2>Projects</h2>
 
           <div className="projects_container">
+            <div className="project-div">
+              <a
+                href="https://github.com/Gluay88/ChatWithMeGPT"
+                target="_blank"
+              >
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[18]}
+                  projectNameTag={this.state.projectNameTag[18]}
+                  description={this.state.description[18]}
+                  tools={this.state.tools[18]}
+                  buttonLink={this.state.buttonLink[18]}
+                />
+              </a>
+            </div>
+
             <div className="project-div">
               <a href="https://80sfriends.netlify.app/" target="_blank">
                 <ProjectsPage
