@@ -22,6 +22,8 @@ import Firebase from "../assets/firebase.jpg";
 import LegoCars from "../assets/LegoCars.jpg";
 import Friends from "../assets/80sFriends.jpg";
 import ChatWithMeGPT from "../assets/ChatWithMe.jpg";
+import UXUI from "../assets/uxui.jpg";
+import UserDiagram from "../assets/userdiagram.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -267,16 +269,67 @@ class Projects extends React.Component {
         <Header />
         <div className="container-all">
           <h2>Projects</h2>
+          <div className="eagl-project">
+            <h4>Gun Shot Detection Software (NG-EAGL)</h4>
+            <p>
+              The core of EAGL’s sensor technology (developed by the Department
+              of Energy) uses advanced algorithms to analyze firearm discharge
+              event energy
+            </p>
+            <br />
+            <p>
+              The EAGL System reacts during an active shooter event (Indoor or
+              Outdoor) by capturing energy levels with acoustic characteristics
+              and performing on-board sensor waveform analysis. The analysis
+              results determine whether or not further captured event signal
+              examination is needed and what other system actions to initiate.
+            </p>
+            <br />
 
-          <iframe
-            src="https://player.vimeo.com/video/813020446?h=689946c0f3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            width="100%"
-            height="996"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
-            title="MapBoxEAGL.mp4"
-          ></iframe>
+            <div className="ux-contents">
+              <div className="ux-container">
+                <a
+                  href="https://www.figma.com/file/P0YuLcZ1vWox4dNCcgXAGW/09%2F29%2F2022%3D%3EEAGL?node-id=0-1&t=mCIkl3cAMXIkvtGv-0"
+                  target="_blank"
+                >
+                  UX/UI Design ↗️
+                </a>
+                <a
+                  href="https://www.figma.com/file/P0YuLcZ1vWox4dNCcgXAGW/09%2F29%2F2022%3D%3EEAGL?node-id=0-1&t=mCIkl3cAMXIkvtGv-0"
+                  target="_blank"
+                >
+                  <img src={UXUI} alt="UX UI design" />
+                </a>
+              </div>
+
+              <div className="userflow-container">
+                <a
+                  href="https://www.figma.com/file/sEYC12zQ3ipg9RddF5z4NN/UserFlowDiagram-EAGL%3D%3E09282022?node-id=0-1&t=FDOwSXwDgPeKhpzY-0"
+                  target="_blank"
+                >
+                  User Flow Diagram ↗️
+                </a>
+                <a
+                  href="https://www.figma.com/file/sEYC12zQ3ipg9RddF5z4NN/UserFlowDiagram-EAGL%3D%3E09282022?node-id=0-1&t=FDOwSXwDgPeKhpzY-0"
+                  target="_blank"
+                >
+                  <img src={UserDiagram} />
+                </a>
+              </div>
+            </div>
+            <div className="video-eagl">
+              <iframe
+                src="https://player.vimeo.com/video/813020446?h=689946c0f3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                width="100%"
+                height="996"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                title="MapBoxEAGL.mp4"
+              ></iframe>
+            </div>
+          </div>
+          {/* Ends EAGL */}
 
           <div className="projects_container">
             <div className="project-div">

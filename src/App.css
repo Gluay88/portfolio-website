@@ -459,6 +459,64 @@
   background-color: #ff6d6d;
   color: #ffffff;
 }
+/* EAGL project container.. */
+.eagl-project {
+  width: 100%;
+  height: auto;
+  margin-top: 3%;
+}
+.eagl-project h4 {
+  color: #e9b5fe;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+.eagl-project p {
+  font-size: 0.9rem !important;
+}
+.ux-contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5%;
+}
+.ux-container {
+  width: 48%;
+}
+.ux-container a:first-child {
+  color: #e9b5fe;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 1%;
+}
+.ux-container a img {
+  width: 100%;
+}
+.userflow-container {
+  width: 48%;
+}
+.userflow-container a img {
+  width: 100%;
+}
+.userflow-container a:first-child {
+  color: #e9b5fe;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 1%;
+}
+.eagl-project a:hover {
+  color: #ff6d6d;
+}
+.eagl-project img:hover {
+  border: solid 0.05rem #e9b5fe;
+}
+.video-eagl {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.video-eagl iframe {
+  width: 100%;
+}
 
 /************** Media Query *******/
 @media screen and (min-width: 1010px) {
@@ -489,6 +547,9 @@
   .menu-mask {
     display: none;
   }
+  .video-eagl iframe {
+    height: 996px;
+  }
 }
 @media screen and (max-width: 1300px) and (min-width: 600px) {
   .header {
@@ -505,6 +566,9 @@
 
   .linkedin-logo {
     right: 15%;
+  }
+  .video-eagl iframe {
+    height: 700px;
   }
 }
 
@@ -547,6 +611,9 @@
 
   .software img {
     width: 25%;
+  }
+  .video-eagl iframe {
+    height: 500px;
   }
 }
 
@@ -628,5 +695,8 @@
   }
   .linkedin-logo {
     right: 25%;
+  }
+  .video-eagl iframe {
+    height: 300px;
   }
 }
