@@ -272,9 +272,9 @@ class Projects extends React.Component {
           <div className="eagl-project">
             <h4>Gun Shot Detection Software (NG-EAGL)</h4>
             <p>
-              The core of EAGL’s sensor technology (developed by the Department
-              of Energy) uses advanced algorithms to analyze firearm discharge
-              event energy
+              The core of EAGL’s <span>sensor technology</span> (developed by
+              the <span>Department of Energy</span>) uses advanced algorithms to
+              analyze firearm discharge event energy
             </p>
             <br />
             <p>
@@ -318,6 +318,14 @@ class Projects extends React.Component {
               </div>
             </div>
             <div className="video-eagl">
+              <p>
+                Tools for the project:{" "}
+                <span>
+                  Django, React, MapboxGL, Middleware, GraphQL, API, Docker and
+                  SocketIO / Event Manager
+                </span>{" "}
+                ⬇️
+              </p>
               <iframe
                 src="https://player.vimeo.com/video/813020446?h=689946c0f3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 width="100%"
