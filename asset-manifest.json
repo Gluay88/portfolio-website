@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.c8bc9783.css",
-    "main.js": "/portfolio-website/static/js/main.1c455446.js",
+    "main.css": "/portfolio-website/static/css/main.97e674f0.css",
+    "main.js": "/portfolio-website/static/js/main.5bf04e62.js",
     "static/media/prime-video.jpg": "/portfolio-website/static/media/prime-video.6149bcc5f3c8c47b9b97.jpg",
+    "static/media/uxui.jpg": "/portfolio-website/static/media/uxui.1c503dbfe8fa8cb57417.jpg",
     "static/media/cat_tinder.jpg": "/portfolio-website/static/media/cat_tinder.00477231f9b929f991ba.jpg",
     "static/media/lloyd-pest-control.jpg": "/portfolio-website/static/media/lloyd-pest-control.0d09946601a4d2334548.jpg",
     "static/media/80sFriends.jpg": "/portfolio-website/static/media/80sFriends.910406e01de00377d451.jpg",
     "static/media/shlf_app.jpg": "/portfolio-website/static/media/shlf_app.c390a28b00735aeb16f3.jpg",
+    "static/media/userdiagram.jpg": "/portfolio-website/static/media/userdiagram.6525a0786e89b2864eb3.jpg",
     "static/media/light_bulbs.jpg": "/portfolio-website/static/media/light_bulbs.549c26b6fd864436dd1b.jpg",
     "static/media/project_pic5.jpg": "/portfolio-website/static/media/project_pic5.15af30dda1948b9caa47.jpg",
     "static/media/JWT.jpg": "/portfolio-website/static/media/JWT.57f0317e8418716a2384.jpg",
@@ -40,11 +42,11 @@
     "static/media/css_logo.svg": "/portfolio-website/static/media/css_logo.9aed3f6a82861f6ddfb9d72b5970befa.svg",
     "static/media/JS_logo.svg": "/portfolio-website/static/media/JS_logo.384fd9f7688f68eb9e3caca3975129bb.svg",
     "index.html": "/portfolio-website/index.html",
-    "main.c8bc9783.css.map": "/portfolio-website/static/css/main.c8bc9783.css.map",
-    "main.1c455446.js.map": "/portfolio-website/static/js/main.1c455446.js.map"
+    "main.97e674f0.css.map": "/portfolio-website/static/css/main.97e674f0.css.map",
+    "main.5bf04e62.js.map": "/portfolio-website/static/js/main.5bf04e62.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8bc9783.css",
-    "static/js/main.1c455446.js"
+    "static/css/main.97e674f0.css",
+    "static/js/main.5bf04e62.js"
   ]
 }
