@@ -354,19 +354,6 @@ class Projects extends React.Component {
                 />
               </a>
             </div>
-
-            <div className="project-div">
-              <a href="https://80sfriends.netlify.app/" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[17]}
-                  projectNameTag={this.state.projectNameTag[17]}
-                  description={this.state.description[17]}
-                  tools={this.state.tools[17]}
-                  buttonLink={this.state.buttonLink[17]}
-                />
-              </a>
-            </div>
-
             <div className="project-div">
               <a
                 href="https://lego-car-shop-gluay.netlify.app/"
@@ -381,6 +368,19 @@ class Projects extends React.Component {
                 />
               </a>
             </div>
+
+            <div className="project-div">
+              <a href="https://80sfriends.netlify.app/" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[17]}
+                  projectNameTag={this.state.projectNameTag[17]}
+                  description={this.state.description[17]}
+                  tools={this.state.tools[17]}
+                  buttonLink={this.state.buttonLink[17]}
+                />
+              </a>
+            </div>
+
             <div className="project-div">
               <a
                 href="https://github.com/Gluay88/firebase-fullstack"
@@ -446,17 +446,7 @@ class Projects extends React.Component {
                 />
               </a>
             </div>
-            <div className="project-div">
-              <a href="https://gluay88.github.io/" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[4]}
-                  projectNameTag={this.state.projectNameTag[4]}
-                  description={this.state.description[4]}
-                  tools={this.state.tools[4]}
-                  buttonLink={this.state.buttonLink[4]}
-                />
-              </a>
-            </div>
+
             <div className="project-div">
               <a href="https://github.com/EnCiv/undebate-ssp" target="_blank">
                 <ProjectsPage
@@ -496,20 +486,6 @@ class Projects extends React.Component {
 
             <div className="project-div">
               <a
-                href="https://62587a976ff44006313b265c--musical-tartufo-215d4b.netlify.app/"
-                target="_blank"
-              >
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[11]}
-                  projectNameTag={this.state.projectNameTag[11]}
-                  description={this.state.description[11]}
-                  tools={this.state.tools[11]}
-                  buttonLink={this.state.buttonLink[11]}
-                />
-              </a>
-            </div>
-            <div className="project-div">
-              <a
                 href="https://github.com/Gluay88/cat-tinder-backend"
                 target="_blank"
               >
@@ -519,65 +495,6 @@ class Projects extends React.Component {
                   description={this.state.description[7]}
                   tools={this.state.tools[7]}
                   buttonLink={this.state.buttonLink[7]}
-                />
-              </a>
-            </div>
-            <div className="project-div">
-              <a href="http://gluita.com/" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[0]}
-                  projectNameTag={this.state.projectNameTag[0]}
-                  description={this.state.description[0]}
-                  tools={this.state.tools[0]}
-                  buttonLink={this.state.buttonLink[0]}
-                />
-              </a>
-            </div>
-
-            <div className="project-div">
-              <a href="https://github.com/Gluay88/light-bulbs" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[6]}
-                  projectNameTag={this.state.projectNameTag[6]}
-                  description={this.state.description[6]}
-                  tools={this.state.tools[6]}
-                  buttonLink={this.state.buttonLink[6]}
-                />
-              </a>
-            </div>
-
-            <div className="project-div">
-              <a href="https://github.com/Gluay88/pig-latin" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[5]}
-                  projectNameTag={this.state.projectNameTag[5]}
-                  description={this.state.description[5]}
-                  tools={this.state.tools[5]}
-                  buttonLink={this.state.buttonLink[5]}
-                />
-              </a>
-            </div>
-
-            <div className="project-div">
-              <a href="https://superiorsidinginc.net/" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[2]}
-                  projectNameTag={this.state.projectNameTag[2]}
-                  description={this.state.description[2]}
-                  tools={this.state.tools[2]}
-                  buttonLink={this.state.buttonLink[2]}
-                />
-              </a>
-            </div>
-
-            <div className="project-div">
-              <a href="http://thaiwisdomkirkland.com/" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[3]}
-                  projectNameTag={this.state.projectNameTag[3]}
-                  description={this.state.description[3]}
-                  tools={this.state.tools[3]}
-                  buttonLink={this.state.buttonLink[3]}
                 />
               </a>
             </div>

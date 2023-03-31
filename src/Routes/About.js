@@ -33,17 +33,21 @@ function About() {
 
             <p>
               Hello! My name is Gluay ("Glue-A"). <br />
-              I'm a full stack web developer and UX/UI enthusiast coming from an
-              architecture and design background with a deep understanding of
-              the web who enjoys using multiple tools to engineer and create.
+              Software Developer coming from gunshot and weapon detection
+              software development. Seeking a challenging position in a company
+              that values innovation, excellence and creativity.
             </p>
             <br />
             <br />
 
             <h4>Work Experience..........</h4>
             <p>
+              &#10148; Software Engineer, EAGL Technology, Alburquerque, NM June
+              2022 - Present
+            </p>
+            <p>
               &#10148; Full Stack Development Bootcamp Course, Learn Academy,
-              California Nov 2021 - Present
+              California Nov 2021 - April 2022
             </p>
             <p>
               &#10148; Web and Graphic Designer and Animator , MGNOnline,
@@ -72,10 +76,10 @@ function About() {
 
             <h4>Softwares....................</h4>
             <p>
-              Ruby on Rails, Ruby, MongoDB, React, Node.js, Storybook, JavaScript, Git, GitHub, HTML, CSS,
-              Node.js, TypeScript, Jest, Postgresql, Postman, WordPress,
-              Bootstrap, AutoCAD, SketchUp,AferEffect, Illustrator, PhotoShop,
-              InDesign
+              Ruby on Rails, Ruby, MongoDB, React, Node.js, Storybook,
+              JavaScript, Git, GitHub, HTML, CSS, Node.js, TypeScript, Jest,
+              Postgresql, Postman, WordPress, Bootstrap, AutoCAD,
+              SketchUp,AferEffect, Illustrator, PhotoShop, InDesign
             </p>
           </div>
         </div>
