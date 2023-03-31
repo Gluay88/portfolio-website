@@ -20,7 +20,7 @@ import JWTAuth from "../assets/JWT.jpg";
 import SneakyOnes from "../assets/sneakyones.jpg";
 import Firebase from "../assets/firebase.jpg";
 import LegoCars from "../assets/LegoCars.jpg";
-import Friends from "../assets/80sFriends.jpg";
+import Friends from "../assets/80steam.jpg";
 import ChatWithMeGPT from "../assets/ChatWithMe.jpg";
 import UXUI from "../assets/uxui.jpg";
 import UserDiagram from "../assets/userdiagram.jpg";
@@ -69,7 +69,7 @@ class Projects extends React.Component {
         "Sneaky Ones",
         "Firebase Authentication",
         "Lego Cars",
-        "80s Friends",
+        "80s Dream Team",
         "ChatWithMeGPT",
       ],
 
@@ -247,7 +247,7 @@ class Projects extends React.Component {
           More..
         </a>,
         <a
-          href="https://80sfriends.netlify.app/"
+          href="https://80sfrienddreamteam.netlify.app/"
           target="_blank"
           style={{ color: "white", textDecoration: "none" }}
         >
@@ -370,7 +370,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="project-div">
-              <a href="https://80sfriends.netlify.app/" target="_blank">
+              <a href="https://80sfrienddreamteam.netlify.app/" target="_blank">
                 <ProjectsPage
                   imageSrc={this.state.imageSrc[17]}
                   projectNameTag={this.state.projectNameTag[17]}
