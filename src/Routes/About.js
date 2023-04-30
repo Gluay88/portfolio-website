@@ -33,7 +33,7 @@ function About() {
 
             <p>
               Hello! My name is Gluay ("Glue-A"). <br />
-              Software Developer coming from gunshot and weapon detection
+              Software Engineer coming from gunshot and weapon detection
               software development. Seeking a challenging position in a company
               that values innovation, excellence and creativity.
             </p>
@@ -50,7 +50,7 @@ function About() {
               California Nov 2021 - April 2022
             </p>
             <p>
-              &#10148; Web and Graphic Designer and Animator , MGNOnline,
+              &#10148; Web, Graphic Designer and Animator , MGNOnline,
               California Mar 2018 - Oct 2021
             </p>
             <p>
@@ -76,10 +76,10 @@ function About() {
 
             <h4>Softwares....................</h4>
             <p>
-              Ruby on Rails, Ruby, MongoDB, React, Node.js, Storybook,
-              JavaScript, Git, GitHub, HTML, CSS, Node.js, TypeScript, Jest,
-              Postgresql, Postman, WordPress, Bootstrap, AutoCAD,
-              SketchUp,AferEffect, Illustrator, PhotoShop, InDesign
+              Ruby on Rails, Ruby, MongoDB, React, Node, Storybook, JavaScript,
+              Git, GitHub, HTML, CSS, Express, TypeScript, Jest, Postgresql,
+              Postman, WordPress, Bootstrap, AutoCAD, Shopify, SketchUp,
+              AfterEffect, Illustrator, PhotoShop, InDesign
             </p>
           </div>
         </div>

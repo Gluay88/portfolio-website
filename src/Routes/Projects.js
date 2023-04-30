@@ -24,6 +24,8 @@ import Friends from "../assets/80steam.jpg";
 import ChatWithMeGPT from "../assets/ChatWithMe.jpg";
 import UXUI from "../assets/uxui.jpg";
 import UserDiagram from "../assets/userdiagram.jpg";
+import Customers from "../assets/Customers.jpg";
+import MorningMoms from "../assets/MorningMoms.jpg";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -49,6 +51,8 @@ class Projects extends React.Component {
         LegoCars,
         Friends,
         ChatWithMeGPT,
+        Customers,
+        MorningMoms,
       ],
 
       projectNameTag: [
@@ -71,6 +75,8 @@ class Projects extends React.Component {
         "Lego Cars",
         "80s Dream Team",
         "ChatWithMeGPT",
+        "Customers-DB",
+        "Morning Moms",
       ],
 
       description: [
@@ -93,6 +99,8 @@ class Projects extends React.Component {
         "Vite-React E-Commerce",
         "Full Stack App",
         "OpenAI ChatGPT App",
+        "Full Stack App",
+        "E-Commerce App",
       ],
 
       tools: [
@@ -115,6 +123,8 @@ class Projects extends React.Component {
         "Google Autocomplete,Vite, React, TypeScript",
         "Django/Python and React",
         "OpenAI, ChatGPT, Node, JavaScript",
+        "Node, MongoDB, React, Express, Postman and TailwindCSS",
+        "Liquid (written In Ruby), JSON, JavaScript, CSS and REST API",
       ],
 
       buttonLink: [
@@ -260,6 +270,20 @@ class Projects extends React.Component {
         >
           More..
         </a>,
+        <a
+          href="https://github.com/Gluay88/customers-node-BACKEND"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
+        <a
+          href="https://morningmoms.myshopify.com/"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          More..
+        </a>,
       ],
     };
   }
@@ -341,6 +365,43 @@ class Projects extends React.Component {
 
           <div className="projects_container">
             <div className="project-div">
+              <a href="https://morningmoms.myshopify.com/" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[20]}
+                  projectNameTag={this.state.projectNameTag[20]}
+                  description={this.state.description[20]}
+                  tools={this.state.tools[20]}
+                  buttonLink={this.state.buttonLink[20]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
+              <a
+                href="https://github.com/Gluay88/customers-node-BACKEND"
+                target="_blank"
+              >
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[19]}
+                  projectNameTag={this.state.projectNameTag[19]}
+                  description={this.state.description[19]}
+                  tools={this.state.tools[19]}
+                  buttonLink={this.state.buttonLink[19]}
+                />
+              </a>
+            </div>
+
+            <div className="project-div">
+              <a href="https://lego-shop-gluay.netlify.app/" target="_blank">
+                <ProjectsPage
+                  imageSrc={this.state.imageSrc[16]}
+                  projectNameTag={this.state.projectNameTag[16]}
+                  description={this.state.description[16]}
+                  tools={this.state.tools[16]}
+                  buttonLink={this.state.buttonLink[16]}
+                />
+              </a>
+            </div>
+            <div className="project-div">
               <a
                 href="https://github.com/Gluay88/ChatWithMeGPT"
                 target="_blank"
@@ -351,17 +412,6 @@ class Projects extends React.Component {
                   description={this.state.description[18]}
                   tools={this.state.tools[18]}
                   buttonLink={this.state.buttonLink[18]}
-                />
-              </a>
-            </div>
-            <div className="project-div">
-              <a href="https://lego-shop-gluay.netlify.app/" target="_blank">
-                <ProjectsPage
-                  imageSrc={this.state.imageSrc[16]}
-                  projectNameTag={this.state.projectNameTag[16]}
-                  description={this.state.description[16]}
-                  tools={this.state.tools[16]}
-                  buttonLink={this.state.buttonLink[16]}
                 />
               </a>
             </div>
