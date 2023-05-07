@@ -123,7 +123,7 @@ class Projects extends React.Component {
         "Google Autocomplete,Vite, React, TypeScript",
         "Django/Python and React",
         "OpenAI, ChatGPT, Node, JavaScript",
-        "Node, MongoDB, React, Express, Postman and TailwindCSS",
+        "Node, MongoDB, Express, TypeScript, Postman and TailwindCSS",
         "Liquid (written In Ruby), JSON, JavaScript, CSS and REST API",
       ],
 
