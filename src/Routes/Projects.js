@@ -351,12 +351,11 @@ class Projects extends React.Component {
                 ⬇️
               </p>
               <iframe
-                src="https://player.vimeo.com/video/813020446?h=689946c0f3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/832462113?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 width="100%"
                 height="996"
-                frameborder="0"
+                frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
                 title="MapBoxEAGL.mp4"
               ></iframe>
             </div>
