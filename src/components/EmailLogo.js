@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-function EmailLogo() {
+const EmailLogo = () => {
   return (
     <div className="email-logo">
       <a href="mailto:gluaysmedley@gmail.com" target="_blank">
@@ -14,6 +14,6 @@ function EmailLogo() {
       </a>
     </div>
   );
-}
+};
 
 export default EmailLogo;

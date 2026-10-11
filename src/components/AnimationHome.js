@@ -1,9 +1,9 @@
 import React from "react";
 import "./AnimationStyle.css";
 import Typist from "react-typist";
-import Laptop from "../assets/laptop.png";
+import CodeEditor from "../assets/code_editor.svg";
 
-export function AnimationHome() {
+export const AnimationHome = () => {
   return (
     <div className="homepage_gluay">
       <div className="gluay">
@@ -38,11 +38,11 @@ export function AnimationHome() {
           </Typist>
         </div>
         <div className="gluay_home_pic">
-          <img src={Laptop} alt="laptop" />
+          <img src={CodeEditor} alt="Code editor with React code and a terminal" />
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default AnimationHome;

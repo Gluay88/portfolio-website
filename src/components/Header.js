@@ -6,7 +6,7 @@ import LinkedInLogo from "./LinkedinLogo";
 
 import "../App.css";
 
-function Header() {
+const Header = () => {
   return (
     <header className="header">
       <a href="https://gluay88.github.io/portfolio-website">Glu@y</a>
@@ -16,6 +16,6 @@ function Header() {
       <Navigation />
     </header>
   );
-}
+};
 
 export default Header;

@@ -91,17 +91,43 @@
   }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 400px) {
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes framein {
+  to {
+    border-bottom-color: rgb(160, 151, 203);
+    border-right-color: rgb(160, 151, 203);
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .homepage_gluay {
     margin: 0 auto;
     text-align: center;
   }
+  /* picture floats in first, then the frame slowly appears */
   .gluay {
     width: 85%;
     margin: 0 auto;
+    flex-direction: column;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    animation: framein 2s ease-in 1s forwards;
   }
+  /* reserve room for the typed text so the frame doesn't grow while typing */
   .gluayInfo {
-    width: 1000vw;
+    width: 100%;
+    min-height: 260px;
     margin: 0 auto;
   }
 
@@ -117,8 +143,20 @@
     font-size: 17px;
   }
 
+  /* picture on top so the typed text can't push it down */
+  .gluay_home_pic {
+    order: -1;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
   .gluay_home_pic img {
-    display: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    animation: fadein 1.2s ease-out both;
   }
 
   .gluay a {

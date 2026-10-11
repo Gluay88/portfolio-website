@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-function LinkedinLogo() {
+const LinkedinLogo = () => {
   return (
     <>
       <div className="linkedin-logo">
@@ -23,6 +23,6 @@ function LinkedinLogo() {
       </div>
     </>
   );
-}
+};
 
 export default LinkedinLogo;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function GitHub() {
+const GitHub = () => {
   return (
     <div className="github-icon">
       <a href="https://github.com/Gluay88" target="_blank">
@@ -13,6 +13,6 @@ function GitHub() {
       </a>
     </div>
   );
-}
+};
 
 export default GitHub;

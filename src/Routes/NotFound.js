@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import robot from "../assets/pagenotfound.svg";
 
-function NotFound() {
+const NotFound = () => {
   return (
     <div id="not-found-page">
       <img src={robot} alt="404 page not found" />
@@ -11,5 +11,5 @@ function NotFound() {
       </a>
     </div>
   );
-}
+};
 export default NotFound;

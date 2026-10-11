@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 840" role="img" aria-label="Code editor showing a Node.js AWS Lambda handler, with a serverless deploy terminal">
+  <defs>
+    <linearGradient id="win" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1630"/>
+      <stop offset="1" stop-color="#0d0918"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e9b5fe"/>
+      <stop offset="1" stop-color="#b3d0fe"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- floating symbols: lambda and cloud -->
+  <text x="1255" y="130" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="96" font-weight="bold" fill="#ff6d6d" opacity="0.85">λ</text>
+  <path d="M60 800h110a38 38 0 0 0 0-76 52 52 0 0 0-100-12 34 34 0 0 0-10 88z" fill="none" stroke="#b3d0fe" stroke-width="7" stroke-linejoin="round" opacity="0.75"/>
+
+  <!-- editor window -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="70" width="1060" height="640" rx="22" fill="url(#win)" stroke="rgb(160,151,203)" stroke-width="2"/>
+    <path d="M120 92a22 22 0 0 1 22-22h1016a22 22 0 0 1 22 22v38H120z" fill="#251d3d"/>
+    <circle cx="160" cy="100" r="9" fill="#ff6d6d"/>
+    <circle cx="190" cy="100" r="9" fill="#fdd68a"/>
+    <circle cx="220" cy="100" r="9" fill="#8fe3b0"/>
+    <rect x="270" y="80" width="190" height="50" rx="8" fill="#1c1630"/>
+    <text x="292" y="112" font-family="Menlo, Consolas, monospace" font-size="20" fill="#e9b5fe">handler.js</text>
+    <rect x="270" y="126" width="190" height="4" fill="url(#glow)"/>
+    <text x="482" y="112" font-family="Menlo, Consolas, monospace" font-size="20" fill="#5d5580">serverless.yml</text>
+    <rect x="1010" y="84" width="150" height="34" rx="17" fill="none" stroke="#8cc84b" stroke-width="2"/>
+    <text x="1085" y="108" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="18" fill="#8cc84b">Node.js 22</text>
+  </g>
+
+  <!-- code -->
+  <g font-family="Menlo, Consolas, 'Courier New', monospace" font-size="28">
+    <g fill="#5d5580" text-anchor="end">
+      <text x="185" y="190">1</text><text x="185" y="236">2</text><text x="185" y="282">3</text>
+      <text x="185" y="328">4</text><text x="185" y="374">5</text><text x="185" y="420">6</text>
+      <text x="185" y="466">7</text><text x="185" y="512">8</text><text x="185" y="558">9</text>
+      <text x="185" y="604">10</text><text x="185" y="650">11</text>
+    </g>
+    <text x="215" y="190"><tspan fill="#e9b5fe">import</tspan><tspan fill="#f9f7f9"> { DynamoDB } </tspan><tspan fill="#e9b5fe">from</tspan><tspan fill="#8fe3b0"> "@aws-sdk/client-dynamodb"</tspan><tspan fill="#f9f7f9">;</tspan></text>
+    <text x="215" y="236"><tspan fill="#e9b5fe">const</tspan><tspan fill="#f9f7f9"> db = </tspan><tspan fill="#e9b5fe">new</tspan><tspan fill="#b3d0fe"> DynamoDB</tspan><tspan fill="#f9f7f9">({});</tspan></text>
+    <text x="215" y="328"><tspan fill="#e9b5fe">export const</tspan><tspan fill="#b3d0fe"> handler</tspan><tspan fill="#f9f7f9"> = </tspan><tspan fill="#e9b5fe">async</tspan><tspan fill="#f9f7f9"> (event) =&gt; {</tspan></text>
+    <text x="255" y="374"><tspan fill="#e9b5fe">const</tspan><tspan fill="#f9f7f9"> msg = JSON.</tspan><tspan fill="#b3d0fe">parse</tspan><tspan fill="#f9f7f9">(event.body);</tspan></text>
+    <text x="255" y="420"><tspan fill="#e9b5fe">await</tspan><tspan fill="#f9f7f9"> db.</tspan><tspan fill="#b3d0fe">putItem</tspan><tspan fill="#f9f7f9">(</tspan><tspan fill="#b3d0fe">toItem</tspan><tspan fill="#f9f7f9">(msg));</tspan></text>
+    <text x="255" y="466"><tspan fill="#e9b5fe">return</tspan><tspan fill="#f9f7f9"> {</tspan></text>
+    <text x="295" y="512"><tspan fill="#fdd68a">statusCode</tspan><tspan fill="#f9f7f9">: </tspan><tspan fill="#ff6d6d">200</tspan><tspan fill="#f9f7f9">,</tspan></text>
+    <text x="295" y="558"><tspan fill="#fdd68a">body</tspan><tspan fill="#f9f7f9">: </tspan><tspan fill="#8fe3b0">"Hello from Lambda"</tspan><tspan fill="#f9f7f9">,</tspan></text>
+    <text x="255" y="604" fill="#f9f7f9">};</text>
+    <text x="215" y="650" fill="#f9f7f9">};</text>
+    <rect x="262" y="628" width="14" height="30" fill="#e9b5fe"/>
+  </g>
+
+  <!-- terminal card -->
+  <g filter="url(#shadow)">
+    <rect x="860" y="500" width="460" height="230" rx="18" fill="#0d0918" stroke="#ff6d6d" stroke-width="2"/>
+    <text x="890" y="545" font-family="Menlo, Consolas, monospace" font-size="18" fill="#5d5580">terminal</text>
+    <g font-family="Menlo, Consolas, 'Courier New', monospace" font-size="24">
+      <text x="890" y="595"><tspan fill="#ff6d6d">$</tspan><tspan fill="#f9f7f9"> serverless deploy</tspan></text>
+      <text x="890" y="640" fill="#8fe3b0">✔ Deployed to us-east-1</text>
+      <text x="890" y="685"><tspan fill="#b3d0fe">➜</tspan><tspan fill="#f9f7f9"> POST /messages</tspan><tspan fill="#8fe3b0"> 200</tspan></text>
+    </g>
+  </g>
+</svg>
