@@ -11,11 +11,38 @@
     <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
       <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.45"/>
     </filter>
+    <style>
+      /* blinking cursor in the editor */
+      .cursor { animation: blink 1s step-end infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+
+      /* terminal: all lines show (also if animations never run), then clear
+         and reappear one after another; the negative delay starts each
+         cycle just before the clear, so it plays right after the page loads */
+      .term-line { animation: 7s linear -4.9s infinite; }
+      .term-1 { animation-name: term1; }
+      .term-2 { animation-name: term2; }
+      .term-3 { animation-name: term3; }
+      /* 1% = 70ms; after load the lines return at about 0.35s, 0.55s and 0.75s */
+      @keyframes term1 { 0%, 71% { opacity: 1; } 72%, 74% { opacity: 0; } 75%, 100% { opacity: 1; } }
+      @keyframes term2 { 0%, 71% { opacity: 1; } 72%, 77% { opacity: 0; } 78%, 100% { opacity: 1; } }
+      @keyframes term3 { 0%, 71% { opacity: 1; } 72%, 80% { opacity: 0; } 81%, 100% { opacity: 1; } }
+
+      /* lambda and cloud drift gently */
+      .lambda { animation: bob 4s ease-in-out infinite alternate; }
+      @keyframes bob { to { transform: translateY(-14px); } }
+      .cloud { animation: drift 6s ease-in-out infinite alternate; }
+      @keyframes drift { to { transform: translateX(16px); } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .cursor, .term-line, .lambda, .cloud { animation: none; }
+      }
+    </style>
   </defs>
 
   <!-- floating symbols: lambda and cloud -->
-  <text x="1255" y="130" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="96" font-weight="bold" fill="#ff6d6d" opacity="0.85">λ</text>
-  <path d="M60 800h110a38 38 0 0 0 0-76 52 52 0 0 0-100-12 34 34 0 0 0-10 88z" fill="none" stroke="#b3d0fe" stroke-width="7" stroke-linejoin="round" opacity="0.75"/>
+  <text x="1255" y="130" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="96" font-weight="bold" fill="#ff6d6d" opacity="0.85" class="lambda">λ</text>
+  <path class="cloud" d="M60 800h110a38 38 0 0 0 0-76 52 52 0 0 0-100-12 34 34 0 0 0-10 88z" fill="none" stroke="#b3d0fe" stroke-width="7" stroke-linejoin="round" opacity="0.75"/>
 
   <!-- editor window -->
   <g filter="url(#shadow)">
@@ -50,7 +77,7 @@
     <text x="295" y="558"><tspan fill="#fdd68a">body</tspan><tspan fill="#f9f7f9">: </tspan><tspan fill="#8fe3b0">"Hello from Lambda"</tspan><tspan fill="#f9f7f9">,</tspan></text>
     <text x="255" y="604" fill="#f9f7f9">};</text>
     <text x="215" y="650" fill="#f9f7f9">};</text>
-    <rect x="262" y="628" width="14" height="30" fill="#e9b5fe"/>
+    <rect class="cursor" x="262" y="628" width="14" height="30" fill="#e9b5fe"/>
   </g>
 
   <!-- terminal card -->
@@ -58,9 +85,9 @@
     <rect x="860" y="500" width="460" height="230" rx="18" fill="#0d0918" stroke="#ff6d6d" stroke-width="2"/>
     <text x="890" y="545" font-family="Menlo, Consolas, monospace" font-size="18" fill="#5d5580">terminal</text>
     <g font-family="Menlo, Consolas, 'Courier New', monospace" font-size="24">
-      <text x="890" y="595"><tspan fill="#ff6d6d">$</tspan><tspan fill="#f9f7f9"> serverless deploy</tspan></text>
-      <text x="890" y="640" fill="#8fe3b0">✔ Deployed to us-east-1</text>
-      <text x="890" y="685"><tspan fill="#b3d0fe">➜</tspan><tspan fill="#f9f7f9"> POST /messages</tspan><tspan fill="#8fe3b0"> 200</tspan></text>
+      <text class="term-line term-1" x="890" y="595"><tspan fill="#ff6d6d">$</tspan><tspan fill="#f9f7f9"> serverless deploy</tspan></text>
+      <text class="term-line term-2" x="890" y="640" fill="#8fe3b0">✔ Deployed to us-east-1</text>
+      <text class="term-line term-3" x="890" y="685"><tspan fill="#b3d0fe">➜</tspan><tspan fill="#f9f7f9"> POST /messages</tspan><tspan fill="#8fe3b0"> 200</tspan></text>
     </g>
   </g>
 </svg>

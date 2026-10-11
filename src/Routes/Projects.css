@@ -4,6 +4,38 @@
   padding-bottom: 120px; /* room above the fixed footer */
 }
 
+/* on load: title, then the featured project in sequence */
+.projects-page > h2,
+.projects-intro {
+  animation: projectsFadeUp 0.6s ease-out both;
+}
+
+.projects-intro {
+  animation-delay: 0.1s;
+}
+
+.featured-info {
+  animation: projectsFadeUp 0.7s ease-out 0.2s both;
+}
+
+/* the video only scales in (no fade), so it never stays dimmed */
+.featured-video {
+  animation: videoScaleIn 0.7s ease-out 0.3s both;
+}
+
+.featured-designs {
+  animation: projectsFadeUp 0.7s ease-out 0.45s both;
+}
+
+@keyframes videoScaleIn {
+  from {
+    transform: scale(0.94);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 .projects-intro {
   text-align: center;
   color: #c9c6dd;
@@ -177,7 +209,6 @@
   text-decoration: none;
   transition: transform 0.25s ease, border-color 0.25s ease,
     box-shadow 0.25s ease;
-  animation: projectsFadeUp 0.6s ease-out both;
 }
 
 .project-card:hover {
@@ -312,9 +343,16 @@
 
 /* respect visitors who turn off animations on their device */
 @media (prefers-reduced-motion: reduce) {
+  .projects-page > h2,
+  .projects-intro,
+  .featured-info,
+  .featured-video,
+  .featured-designs {
+    animation: none;
+  }
+
   .project-card,
   .project-card-image img {
-    animation: none;
     transition: none;
   }
 }

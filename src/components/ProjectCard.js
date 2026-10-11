@@ -1,11 +1,14 @@
 import React from "react";
+import "../Routes/Projects.css";
 
-const ProjectCard = ({ project }) => {
+// delay: ms to wait before fading in, to stagger cards in a row
+const ProjectCard = ({ project, delay = 0 }) => {
   const isCode = project.link.includes("github.com");
 
   return (
     <a
-      className="project-card"
+      className="project-card reveal"
+      style={{ "--reveal-delay": `${delay}ms` }}
       href={project.link}
       target="_blank"
       rel="noreferrer"
