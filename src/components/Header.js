@@ -4,6 +4,7 @@ import Navigation from "./Navigation";
 import GitHub from "./GitHub";
 import EmailLogo from "./EmailLogo";
 import LinkedInLogo from "./LinkedinLogo";
+import ResumeLink from "./ResumeLink";
 
 import "../App.css";
 
@@ -18,6 +19,7 @@ const Header = () => {
           <EmailLogo />
           <LinkedInLogo />
           <GitHub />
+          <ResumeLink />
         </div>
       </Navigation>
     </header>

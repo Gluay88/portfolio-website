@@ -60,10 +60,35 @@
   display: flex;
 }
 
+.resume-icon button {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+}
+
 .header-social svg {
   display: block;
   width: 18px;
   height: 18px;
+}
+
+/* The icons fill their boxes differently (a full square, a circle, a wide
+   envelope, a tall page), so each gets its own size to look the same size */
+.header-social .email-logo svg {
+  width: 21px;
+  height: 21px;
+}
+
+.header-social .linkedin-logo svg {
+  width: 17px;
+  height: 17px;
+}
+
+.header-social .github-icon svg,
+.header-social .resume-icon svg {
+  width: 19px;
+  height: 19px;
 }
 
 /* hamburger, phones only */
@@ -176,13 +201,15 @@
 
 .github-icon a,
 .email-logo a,
-.linkedin-logo a {
+.linkedin-logo a,
+.resume-icon button {
   color: #ededed;
 }
 
 .github-icon a:hover,
 .email-logo a:hover,
-.linkedin-logo a:hover {
+.linkedin-logo a:hover,
+.resume-icon button:hover {
   cursor: pointer;
   color: #e9b5fe;
 }
@@ -397,4 +424,60 @@
   .reveal-ready .reveal.is-visible {
     animation: none;
   }
+}
+
+/* Hover label for icons that have no visible text: set data-tooltip to the name */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translate(-50%, -4px);
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #10101a;
+  border: 1px solid rgba(233, 181, 254, 0.35);
+  color: #ededed;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 1000;
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* touch screens have no hover */
+@media (hover: none) {
+  [data-tooltip]::after {
+    display: none;
+  }
+}
+
+.logo-tip {
+  display: flex;
+}
+
+/* the last header icon sits at the page edge, so its label opens to the left */
+.header-social > div:last-child [data-tooltip]::after {
+  left: auto;
+  right: 0;
+  transform: translateY(-4px);
+}
+
+.header-social > div:last-child [data-tooltip]:hover::after,
+.header-social > div:last-child [data-tooltip]:focus-visible::after {
+  transform: translateY(0);
 }

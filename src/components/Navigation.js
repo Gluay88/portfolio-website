@@ -46,6 +46,7 @@ const Navigation = ({ children }) => {
         type="button"
         className="menu-toggle"
         aria-label="Open menu"
+        data-tooltip="Menu"
         aria-expanded={showMenu}
         onClick={() => setShowMenu(!showMenu)}
       >

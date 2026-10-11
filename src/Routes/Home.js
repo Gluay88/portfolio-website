@@ -186,7 +186,13 @@ const Home = () => {
           </div>
           <div className="home-logos">
             {logos.map((logo) => (
-              <img key={logo.alt} src={logo.src} alt={logo.alt} />
+              <span
+                key={logo.alt}
+                className="logo-tip"
+                data-tooltip={logo.alt.replace(/ logo$/, "")}
+              >
+                <img src={logo.src} alt={logo.alt} />
+              </span>
             ))}
           </div>
         </section>

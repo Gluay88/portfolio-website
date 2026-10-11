@@ -189,7 +189,13 @@ const About = () => {
           <h3>Skills & Tools</h3>
           <div className="logo-strip">
             {logos.map((logo) => (
-              <img key={logo.alt} src={logo.src} alt={logo.alt} />
+              <span
+                key={logo.alt}
+                className="logo-tip"
+                data-tooltip={logo.alt.replace(/ logo$/, "")}
+              >
+                <img src={logo.src} alt={logo.alt} />
+              </span>
             ))}
           </div>
           <div className="skill-groups">

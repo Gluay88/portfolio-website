@@ -10,6 +10,7 @@ const LinkedinLogo = () => {
           target="_blank"
           rel="noreferrer"
           aria-label="LinkedIn"
+          data-tooltip="LinkedIn"
         >
           <svg
             id="Layer_1"
