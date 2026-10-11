@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.da600bcd.css",
-    "main.js": "/portfolio-website/static/js/main.bc111df4.js",
+    "main.js": "/portfolio-website/static/js/main.525de045.js",
     "static/media/uxui.jpg": "/portfolio-website/static/media/uxui.1c503dbfe8fa8cb57417.jpg",
     "static/media/cat_tinder.jpg": "/portfolio-website/static/media/cat_tinder.00477231f9b929f991ba.jpg",
     "static/media/lloyd-pest-control.jpg": "/portfolio-website/static/media/lloyd-pest-control.0d09946601a4d2334548.jpg",
@@ -39,10 +39,10 @@
     "index.html": "/portfolio-website/index.html",
     "static/media/aws_logo.svg": "/portfolio-website/static/media/aws_logo.815a5804f1c92702ca9ad3ee1a8c248a.svg",
     "main.da600bcd.css.map": "/portfolio-website/static/css/main.da600bcd.css.map",
-    "main.bc111df4.js.map": "/portfolio-website/static/js/main.bc111df4.js.map"
+    "main.525de045.js.map": "/portfolio-website/static/js/main.525de045.js.map"
   },
   "entrypoints": [
     "static/css/main.da600bcd.css",
-    "static/js/main.bc111df4.js"
+    "static/js/main.525de045.js"
   ]
 }
