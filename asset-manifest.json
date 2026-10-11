@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.69f7b470.css",
-    "main.js": "/portfolio-website/static/js/main.bc11f201.js",
+    "main.css": "/portfolio-website/static/css/main.da600bcd.css",
+    "main.js": "/portfolio-website/static/js/main.bc111df4.js",
     "static/media/uxui.jpg": "/portfolio-website/static/media/uxui.1c503dbfe8fa8cb57417.jpg",
     "static/media/cat_tinder.jpg": "/portfolio-website/static/media/cat_tinder.00477231f9b929f991ba.jpg",
     "static/media/lloyd-pest-control.jpg": "/portfolio-website/static/media/lloyd-pest-control.0d09946601a4d2334548.jpg",
@@ -21,7 +21,7 @@
     "static/media/project_pic2.jpg": "/portfolio-website/static/media/project_pic2.d920d34bd390af6daaff.jpg",
     "static/media/firebase.jpg": "/portfolio-website/static/media/firebase.d9e914827d084cdfa056.jpg",
     "static/media/SketchUp.svg": "/portfolio-website/static/media/SketchUp.527d3d33f2ebf93fd3a40acc32c88dbd.svg",
-    "static/media/code_editor.svg": "/portfolio-website/static/media/code_editor.31f542d5f40baefbf353425c17c62867.svg",
+    "static/media/code_editor.svg": "/portfolio-website/static/media/code_editor.19133ffaefc111478afbc5403bf1f352.svg",
     "static/media/ruby_logo.svg": "/portfolio-website/static/media/ruby_logo.a6cc53b50c9b9f52f4182a03489cc61f.svg",
     "static/media/AutoCAD_logo.svg": "/portfolio-website/static/media/AutoCAD_logo.ccf98c40f42b2e319c9fc8e3f9f4a7cc.svg",
     "static/media/react_logo.svg": "/portfolio-website/static/media/react_logo.e9113bd29817937ac6943c98a4192d26.svg",
@@ -38,11 +38,11 @@
     "static/media/JS_logo.svg": "/portfolio-website/static/media/JS_logo.384fd9f7688f68eb9e3caca3975129bb.svg",
     "index.html": "/portfolio-website/index.html",
     "static/media/aws_logo.svg": "/portfolio-website/static/media/aws_logo.815a5804f1c92702ca9ad3ee1a8c248a.svg",
-    "main.69f7b470.css.map": "/portfolio-website/static/css/main.69f7b470.css.map",
-    "main.bc11f201.js.map": "/portfolio-website/static/js/main.bc11f201.js.map"
+    "main.da600bcd.css.map": "/portfolio-website/static/css/main.da600bcd.css.map",
+    "main.bc111df4.js.map": "/portfolio-website/static/js/main.bc111df4.js.map"
   },
   "entrypoints": [
-    "static/css/main.69f7b470.css",
-    "static/js/main.bc11f201.js"
+    "static/css/main.da600bcd.css",
+    "static/js/main.bc111df4.js"
   ]
 }
