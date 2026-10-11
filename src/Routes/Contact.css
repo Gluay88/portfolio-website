@@ -1,0 +1,228 @@
+/*******  Contact Page *********/
+.contact-page {
+  max-width: 1000px;
+  padding-bottom: 120px; /* room above the fixed footer */
+}
+
+.contact-intro {
+  text-align: center;
+  color: #c9c6dd;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 8px auto 40px;
+  max-width: 600px;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(160, 151, 203, 0.35);
+  box-shadow: 0 20px 40px rgba(10, 2, 30, 0.3);
+  animation: contactFadeUp 0.8s ease-out both;
+}
+
+/* ---------- Left: info ---------- */
+.contact-info {
+  padding: 36px 32px;
+  background-color: rgba(233, 181, 254, 0.06);
+  border-right: 1px solid rgba(160, 151, 203, 0.25);
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.contact-info > p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ededed;
+  margin-bottom: 26px;
+}
+
+.contact-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-links span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #b3d0fe;
+  margin-bottom: 4px;
+}
+
+.contact-links a {
+  font-size: 15px;
+  color: #e9b5fe;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-links a:hover {
+  color: #ff6d6d;
+}
+
+/* ---------- Right: form ---------- */
+.contact-form {
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ededed;
+  margin-bottom: 8px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background-color: rgba(10, 2, 30, 0.35);
+  border: 1px solid rgba(160, 151, 203, 0.4);
+  border-radius: 10px;
+  padding: 12px 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-field ::placeholder {
+  color: rgba(237, 237, 237, 0.4);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #e9b5fe;
+  box-shadow: 0 0 0 3px rgba(233, 181, 254, 0.2);
+}
+
+.form-field .invalid,
+.form-field .invalid:focus {
+  border-color: #ff6d6d;
+  box-shadow: 0 0 0 3px rgba(255, 109, 109, 0.2);
+}
+
+.field-error {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #ff6d6d;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-actions .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.form-actions .btn-primary:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.send-icon {
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+}
+
+.form-status {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #8fe3b0;
+  text-align: right;
+}
+
+.form-status a {
+  color: #e9b5fe;
+}
+
+.form-status-error {
+  color: #ff6d6d;
+}
+
+@keyframes contactFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-card {
+    animation: none;
+  }
+}
+
+/* ---------- Tablet & phone ---------- */
+@media screen and (max-width: 800px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    border-right: none;
+    border-bottom: 1px solid rgba(160, 151, 203, 0.25);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-info,
+  .contact-form {
+    padding: 24px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form-status {
+    text-align: center;
+  }
+}

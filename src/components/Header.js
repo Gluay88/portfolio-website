@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import GitHub from "./GitHub";
 import EmailLogo from "./EmailLogo";
@@ -9,11 +10,16 @@ import "../App.css";
 const Header = () => {
   return (
     <header className="header">
-      <a href="https://gluay88.github.io/portfolio-website">Glu@y</a>
-      <EmailLogo />
-      <LinkedInLogo />
-      <GitHub />
-      <Navigation />
+      <Link className="brand" to="/">
+        Glu@y
+      </Link>
+      <Navigation>
+        <div className="header-social">
+          <EmailLogo />
+          <LinkedInLogo />
+          <GitHub />
+        </div>
+      </Navigation>
     </header>
   );
 };

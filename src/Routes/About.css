@@ -1,0 +1,268 @@
+/*********** About Page **********/
+.about-page {
+  max-width: 1100px;
+  padding-bottom: 120px; /* room above the fixed footer */
+}
+
+.about-page section {
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(160, 151, 203, 0.35);
+  box-shadow: 0 20px 40px rgba(10, 2, 30, 0.3);
+}
+
+/* ---------- Intro ---------- */
+.about-intro {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 36px;
+  animation: aboutFadeUp 0.8s ease-out both;
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 14px;
+  border: 2px solid rgba(233, 181, 254, 0.5);
+}
+
+.about-intro-text h2 {
+  text-align: left;
+  font-size: 34px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.about-role {
+  font-size: 16px;
+  color: #e9b5fe;
+  margin-bottom: 18px;
+}
+
+.about-intro-text p:not(.eyebrow):not(.about-role) {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ededed;
+  max-width: 560px;
+}
+
+.about-intro-text span {
+  color: #e9b5fe;
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+/* ---------- Experience & Education ---------- */
+.about-section {
+  margin-top: 24px;
+  padding: 28px 32px;
+  animation: aboutFadeUp 0.8s ease-out 0.15s both;
+}
+
+.about-section > h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 22px;
+}
+
+.about-section h4 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.timeline {
+  list-style: none;
+  border-left: 2px solid rgba(160, 151, 203, 0.5);
+  margin-left: 6px;
+}
+
+.timeline > li {
+  position: relative;
+  padding: 0 0 34px 28px;
+}
+
+.timeline > li:last-child {
+  padding-bottom: 0;
+}
+
+/* dot on the timeline */
+.timeline > li::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #1c1630;
+  border: 2px solid #ff6d6d;
+}
+
+.timeline > li:first-child::before {
+  background-color: #ff6d6d;
+}
+
+.timeline-dates {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #b3d0fe;
+  margin-bottom: 6px;
+}
+
+.timeline-place,
+.education-list p:not(.timeline-dates) {
+  font-size: 14px;
+  color: #c9c6dd;
+  line-height: 1.5;
+}
+
+.job-highlights {
+  list-style: none;
+  margin: 12px 0 14px;
+  max-width: 820px;
+}
+
+.job-highlights li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ededed;
+}
+
+.job-highlights li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #ff6d6d;
+}
+
+.education-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.education-list li {
+  padding: 14px 16px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(160, 151, 203, 0.2);
+}
+
+.education-list .timeline-dates {
+  margin: 8px 0 0;
+}
+
+/* ---------- Skills ---------- */
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.logo-strip img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.2s ease;
+}
+
+.logo-strip img:hover {
+  transform: translateY(-4px);
+}
+
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.skill-groups h4 {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #b3d0fe;
+  margin-bottom: 12px;
+}
+
+@keyframes aboutFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Tablet & phone ---------- */
+@media screen and (max-width: 700px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .about-photo {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .about-intro-text h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .about-intro-text p:not(.eyebrow):not(.about-role) {
+    margin: 0 auto;
+  }
+
+  .about-actions {
+    justify-content: center;
+  }
+
+  .about-section {
+    padding: 22px 20px;
+  }
+
+  .timeline > li {
+    padding-left: 22px;
+  }
+
+  .job-highlights li {
+    font-size: 14px;
+  }
+
+  .logo-strip {
+    gap: 10px;
+  }
+
+  .logo-strip img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* respect visitors who turn off animations on their device */
+@media (prefers-reduced-motion: reduce) {
+  .about-page section {
+    animation: none;
+  }
+}

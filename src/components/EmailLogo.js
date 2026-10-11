@@ -4,7 +4,7 @@ import "../App.css";
 const EmailLogo = () => {
   return (
     <div className="email-logo">
-      <a href="mailto:gluaysmedley@gmail.com" target="_blank">
+      <a href="mailto:gluaysmedley@gmail.com" aria-label="Email">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path
             fill="currentColor"

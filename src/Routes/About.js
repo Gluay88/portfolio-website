@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
+import "./About.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GluayPhoto from "../assets/gluay_photo.jpg";
@@ -20,88 +22,189 @@ import Illustrator from "../assets/illustrator_logo.svg";
 import PhotoShop from "../assets/photoshop_logo.svg";
 import InDesign from "../assets/inDesign_logo.svg";
 
+const experience = [
+  {
+    role: "Software Engineer",
+    company: "EAGL Technology",
+    location: "Albuquerque, NM",
+    dates: "Jun 2022 – Present",
+    highlights: [
+      "Build NG-EAGL, gunshot detection software that uses sensor technology developed by the Department of Energy to detect and analyze active shooter events, indoors and outdoors.",
+      "Develop the map-based interface with React and Mapbox GL, working across the stack with Django, GraphQL, middleware and APIs.",
+      "Work with real-time event handling using Socket.IO and an event manager, with services running in Docker.",
+      "Designed the UX/UI and user flow diagrams for NG-EAGL in Figma.",
+    ],
+    tech: ["Django", "React", "Mapbox GL", "GraphQL", "Docker", "Socket.IO", "Figma"],
+  },
+  {
+    role: "Web, Graphic Designer and Animator",
+    company: "MGNOnline",
+    location: "California",
+    dates: "Mar 2018 – Oct 2021",
+    highlights: [
+      "Built MGNPro / BMOPro (BuildMyOwn Graphics), an online graphic builder, with JavaScript, HTML and CSS.",
+      "Designed web graphics and created animations with Illustrator, Photoshop and After Effects.",
+    ],
+    tech: ["JavaScript", "HTML", "CSS", "Illustrator", "Photoshop", "After Effects"],
+  },
+  {
+    role: "Landscape Architect",
+    company: "Bermuda Landscape Architects Co., Ltd",
+    location: "Thailand",
+    dates: "Apr 2013 – Dec 2015",
+    highlights: [
+      "Designed landscape architecture projects, producing drawings and 3D models with AutoCAD and SketchUp.",
+    ],
+    tech: ["AutoCAD", "SketchUp"],
+  },
+];
+
+const education = [
+  {
+    title: "Full Stack Development Bootcamp",
+    school: "Learn Academy, California",
+    dates: "Nov 2021 – Apr 2022",
+  },
+  {
+    title: "Certificate in Interaction Design",
+    school: "Santa Monica College, California",
+  },
+  {
+    title: "Bachelor’s Degree in Architecture",
+    school: "Chulalongkorn University, Thailand",
+  },
+];
+
+const skillGroups = [
+  {
+    title: "Frontend",
+    skills: ["JavaScript", "TypeScript", "React", "HTML", "CSS", "Bootstrap", "Storybook"],
+  },
+  {
+    title: "Backend & Data",
+    skills: ["Node.js", "Express", "Ruby on Rails", "Ruby", "MongoDB", "PostgreSQL"],
+  },
+  {
+    title: "Cloud & Tools",
+    skills: ["AWS", "Git", "GitHub", "Jest", "Postman", "WordPress", "Shopify"],
+  },
+  {
+    title: "Design",
+    skills: ["AutoCAD", "SketchUp", "After Effects", "Illustrator", "Photoshop", "InDesign"],
+  },
+];
+
+const logos = [
+  { src: AWS_logo, alt: "AWS logo" },
+  { src: Rails, alt: "Ruby on Rails logo" },
+  { src: Ruby, alt: "Ruby logo" },
+  { src: React_logo, alt: "React logo" },
+  { src: JS_logo, alt: "JavaScript logo" },
+  { src: HTML_logo, alt: "HTML logo" },
+  { src: CSS_logo, alt: "CSS logo" },
+  { src: Git, alt: "Git logo" },
+  { src: GitHub_logo, alt: "GitHub logo" },
+  { src: Wordpress, alt: "WordPress logo" },
+  { src: AutoCAD, alt: "AutoCAD logo" },
+  { src: SketchUp, alt: "SketchUp logo" },
+  { src: AfterEffects, alt: "After Effects logo" },
+  { src: Illustrator, alt: "Illustrator logo" },
+  { src: PhotoShop, alt: "Photoshop logo" },
+  { src: InDesign, alt: "InDesign logo" },
+];
+
 const About = () => {
   return (
     <div>
       <Header />
-      <div className="container-all">
-        <h2>About Glu@y</h2>
-        <div id="about-page">
-          <img id="aboutPage-photo" src={GluayPhoto} />
-          <div id="aboutText">
-            <h3>Glu@y S. Wang</h3>
-            <br />
-
-            <p>
-              Hello! My name is Gluay ("Glue-A"). <br />
-              Software Engineer coming from gunshot and weapon detection
-              software development. Seeking a challenging position in a company
-              that values innovation, excellence and creativity.
-            </p>
-            <br />
-            <br />
-
-            <h4>Work Experience..........</h4>
-            <p>
-              &#10148; Software Engineer, EAGL Technology, Alburquerque, NM June
-              2022 - Present
+      <div className="container-all about-page">
+        <section className="about-intro">
+          <img
+            className="about-photo"
+            src={GluayPhoto}
+            alt="Portrait of Glu@y S. Wang"
+          />
+          <div className="about-intro-text">
+            <p className="eyebrow">About me</p>
+            <h2>Glu@y S. Wang</h2>
+            <p className="about-role">
+              Software Engineer · Full Stack Developer
             </p>
             <p>
-              &#10148; Full Stack Development Bootcamp Course, Learn Academy,
-              California Nov 2021 - April 2022
+              Hello! My name is Gluay <span>(“Glue-A”)</span>. I’m a software
+              engineer coming from gunshot and weapon detection software
+              development, seeking a challenging position in a company that
+              values innovation, excellence and creativity.
             </p>
-            <p>
-              &#10148; Web, Graphic Designer and Animator , MGNOnline,
-              California Mar 2018 - Oct 2021
-            </p>
-            <p>
-              &#10148; Landscape Architect, Bermuda Landscape Architects Co,
-              Ltd, Thailand Apr 2013 - Dec 2015
-            </p>
-            <br />
-            <br />
-
-            <h4>Education....................</h4>
-            <p>
-              &#10148; Bachelor’s Degrees in Architecture, Chulalongkorn
-              University, Thailand
-            </p>
-
-            <p>
-              &#10148; Certification of Interaction Design, Santa Monica
-              College, California
-            </p>
-
-            <br />
-            <br />
-
-            <h4>Softwares....................</h4>
-            <p>
-              Ruby on Rails, Ruby, MongoDB, React, Node, AWS, Storybook, JavaScript,
-              Git, GitHub, HTML, CSS, Express, TypeScript, Jest, Postgresql,
-              Postman, WordPress, Bootstrap, AutoCAD, Shopify, SketchUp,
-              AfterEffect, Illustrator, PhotoShop, InDesign
-            </p>
+            <div className="about-actions">
+              <Link className="btn-primary" to="/Projects">
+                View my projects
+              </Link>
+              <Link className="btn-outline" to="/Contact">
+                Contact me
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="software">
-          <img src={AWS_logo} alt="AWS logo" />
-          <img src={Rails} alt="Ruby on Rails logo" />
-          <img src={Ruby} alt="Ruby logo" />
-          <img src={React_logo} alt="React logo" />
-          <img src={JS_logo} alt="JavaScript logo" />
-          <img src={HTML_logo} alt="HTML logo" />
-          <img src={CSS_logo} alt="CSS logo" />
-          <img src={Git} alt="Git logo" />
-          <img src={GitHub_logo} alt="GitHub logo" />
-          <img src={Wordpress} alt="Wordpress logo" />
-          <img src={AutoCAD} alt="AutoCAD logo" />
-          <img src={SketchUp} alt="SketchUp logo" />
-          <img src={AfterEffects} alt="AfterEffects logo" />
-          <img src={Illustrator} alt="Illustrator logo" />
-          <img src={PhotoShop} alt="PhotoShop logo" />
-          <img src={InDesign} alt="InDesign logo" />
-        </div>
+        </section>
+
+        <section className="about-section">
+          <h3>Experience</h3>
+          <ol className="timeline">
+            {experience.map((job) => (
+              <li key={job.company}>
+                <p className="timeline-dates">{job.dates}</p>
+                <h4>{job.role}</h4>
+                <p className="timeline-place">
+                  {job.company} · {job.location}
+                </p>
+                <ul className="job-highlights">
+                  {job.highlights.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+                <ul className="tech-list">
+                  {job.tech.map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section className="about-section">
+          <h3>Education</h3>
+          <ul className="education-list">
+            {education.map((item) => (
+              <li key={item.title}>
+                <h4>{item.title}</h4>
+                <p>{item.school}</p>
+                {item.dates && <p className="timeline-dates">{item.dates}</p>}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="about-section">
+          <h3>Skills & Tools</h3>
+          <div className="logo-strip">
+            {logos.map((logo) => (
+              <img key={logo.alt} src={logo.src} alt={logo.alt} />
+            ))}
+          </div>
+          <div className="skill-groups">
+            {skillGroups.map((group) => (
+              <div key={group.title}>
+                <h4>{group.title}</h4>
+                <ul className="tech-list">
+                  {group.skills.map((skill) => (
+                    <li key={skill}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
       <Footer />
     </div>

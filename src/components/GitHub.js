@@ -3,7 +3,12 @@ import React from "react";
 const GitHub = () => {
   return (
     <div className="github-icon">
-      <a href="https://github.com/Gluay88" target="_blank">
+      <a
+        href="https://github.com/Gluay88"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="GitHub"
+      >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
           <path
             fill="currentColor"

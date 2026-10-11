@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
+import "./Contact.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -104,86 +105,134 @@ const Contact = () => {
   return (
     <div>
       <Header />
-      <div className="container-all">
-        <h2>Please say hello!</h2>
+      <div className="container-all contact-page">
+        <h2>Contact</h2>
+        <p className="contact-intro">
+          Whether it’s a role, a project or just a hello, I’d love to hear
+          from you.
+        </p>
 
-        <div id="contact-form">
-          <h2>
-            Contact Glu@y{" "}
-            <svg
-              style={{
-                width: "28px",
-                transform: "rotate(-45deg)",
-                margin: "0 0 0 -8px",
-              }}
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+        <section className="contact-card">
+          <aside className="contact-info">
+            <p className="eyebrow">Get in touch</p>
+            <h3>Let’s work together</h3>
+            <p>Send me a message with the form, or reach me directly:</p>
+            <ul className="contact-links">
+              <li>
+                <span>Email</span>
+                <a href={`mailto:${MY_EMAIL}`}>{MY_EMAIL}</a>
+              </li>
+              <li>
+                <span>LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/gluay-s-wang/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  linkedin.com/in/gluay-s-wang
+                </a>
+              </li>
+              <li>
+                <span>GitHub</span>
+                <a
+                  href="https://github.com/Gluay88"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  github.com/Gluay88
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+          <form className="contact-form" onSubmit={handleSubmit} noValidate>
+            <div className="form-row">
+              <div className="form-field">
+                <label htmlFor="firstName">First name</label>
+                <input
+                  type="text"
+                  placeholder="Jane"
+                  autoComplete="given-name"
+                  required
+                  {...fieldProps("firstName")}
+                />
+                {fieldError("firstName")}
+              </div>
+
+              <div className="form-field">
+                <label htmlFor="lastName">Last name</label>
+                <input
+                  type="text"
+                  placeholder="Doe"
+                  autoComplete="family-name"
+                  required
+                  {...fieldProps("lastName")}
+                />
+                {fieldError("lastName")}
+              </div>
+            </div>
+
+            <div className="form-field">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                placeholder="jane@example.com"
+                autoComplete="email"
+                required
+                {...fieldProps("email")}
               />
-            </svg>
-          </h2>
-          <form onSubmit={handleSubmit} noValidate>
-            <label htmlFor="firstName">First Name</label>
-            <input
-              type="text"
-              placeholder="Enter name"
-              autoComplete="given-name"
-              required
-              {...fieldProps("firstName")}
-            />
-            {fieldError("firstName")}
+              {fieldError("email")}
+            </div>
 
-            <label htmlFor="lastName">Last Name</label>
-            <input
-              type="text"
-              placeholder="Enter last name"
-              autoComplete="family-name"
-              required
-              {...fieldProps("lastName")}
-            />
-            {fieldError("lastName")}
+            <div className="form-field">
+              <label htmlFor="message">Message</label>
+              <textarea
+                placeholder="How can I help?"
+                rows={6}
+                required
+                {...fieldProps("message")}
+              ></textarea>
+              {fieldError("message")}
+            </div>
 
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              placeholder="example@email.com"
-              autoComplete="email"
-              required
-              {...fieldProps("email")}
-            />
-            {fieldError("email")}
-
-            <label htmlFor="message">Message</label>
-            <textarea
-              placeholder="Enter message"
-              required
-              {...fieldProps("message")}
-            ></textarea>
-            {fieldError("message")}
-
-            <button type="submit" disabled={status === "sending"}>
-              {status === "sending" ? "Sending..." : "Submit"}
-            </button>
+            <div className="form-actions">
+              <button
+                type="submit"
+                className="btn-primary"
+                disabled={status === "sending"}
+              >
+                {status === "sending" ? "Sending..." : "Send message"}
+                <svg
+                  className="send-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                  />
+                </svg>
+              </button>
+            </div>
 
             {status === "success" && (
-              <p className="form-status">Thanks! Your message has been sent.</p>
+              <p className="form-status" role="status">
+                Thanks! Your message has been sent.
+              </p>
             )}
             {status === "error" && (
-              <p className="form-status form-status-error">
+              <p className="form-status form-status-error" role="alert">
                 Sorry, something went wrong. Please email me at{" "}
                 <a href={`mailto:${MY_EMAIL}`}>{MY_EMAIL}</a>.
               </p>
             )}
           </form>
-        </div>
+        </section>
       </div>
       <Footer />
     </div>

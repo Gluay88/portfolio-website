@@ -2,9 +2,18 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useTransition, animated } from "react-spring";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
-const Navigation = () => {
+const PAGES = [
+  { to: "/", label: "Home" },
+  { to: "/Projects", label: "Projects" },
+  { to: "/About", label: "About" },
+  { to: "/Contact", label: "Contact" },
+];
+
+// Desktop shows the links in the header; phones use the hamburger menu.
+// children: extra header items (the social icons) shown between them.
+const Navigation = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const transitions = useTransition(showMenu, {
@@ -20,12 +29,28 @@ const Navigation = () => {
   });
 
   return (
-    <nav>
-      <FontAwesomeIcon
-        icon={faBars}
+    <nav className="site-nav">
+      <ul className="nav-desktop">
+        {PAGES.map((page) => (
+          <li key={page.to}>
+            <NavLink to={page.to} end={page.to === "/"}>
+              {page.label}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+
+      {children}
+
+      <button
+        type="button"
+        className="menu-toggle"
+        aria-label="Open menu"
+        aria-expanded={showMenu}
         onClick={() => setShowMenu(!showMenu)}
-        className="menu-icon-mobile"
-      />
+      >
+        <FontAwesomeIcon icon={faBars} />
+      </button>
 
       {transitionsOverlay(
         (styles, item) =>
@@ -43,26 +68,13 @@ const Navigation = () => {
           item && (
             <animated.div style={styles} className="nav-menu-small">
               <ul className="nav-links">
-                <li>
-                  <Link to="/" onClick={() => setShowMenu(false)}>
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/Projects" onClick={() => setShowMenu(false)}>
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/About" onClick={() => setShowMenu(false)}>
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/Contact" onClick={() => setShowMenu(false)}>
-                    Contact
-                  </Link>
-                </li>
+                {PAGES.map((page) => (
+                  <li key={page.to}>
+                    <Link to={page.to} onClick={() => setShowMenu(false)}>
+                      {page.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </animated.div>
           )

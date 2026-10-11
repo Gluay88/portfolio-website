@@ -13,24 +13,6 @@
   line-height: 1.6;
 }
 
-/* tech tags, shared by the featured project and the cards */
-.tech-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  list-style: none;
-}
-
-.tech-list li {
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  color: #e9b5fe;
-  background-color: rgba(233, 181, 254, 0.1);
-  border: 1px solid rgba(233, 181, 254, 0.25);
-  border-radius: 999px;
-  padding: 3px 10px;
-}
-
 /* ---------- Featured project ---------- */
 .featured-project {
   display: grid;
@@ -48,14 +30,6 @@
 
 .featured-info {
   grid-area: info;
-}
-
-.eyebrow {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #ff6d6d;
-  margin-bottom: 10px;
 }
 
 .featured-info h3 {
@@ -333,5 +307,14 @@
   .tech-list li {
     font-size: 11px;
     padding: 2px 8px;
+  }
+}
+
+/* respect visitors who turn off animations on their device */
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-card-image img {
+    animation: none;
+    transition: none;
   }
 }
