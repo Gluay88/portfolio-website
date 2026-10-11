@@ -7,7 +7,7 @@ import About from "./Routes/About";
 import Contact from "./Routes/Contact";
 import NotFound from "./Routes/NotFound";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Routes>
@@ -19,5 +19,5 @@ function App() {
       </Routes>
     </div>
   );
-}
+};
 export default App;

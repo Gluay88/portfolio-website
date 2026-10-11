@@ -3,6 +3,7 @@ import "../App.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GluayPhoto from "../assets/gluay_photo.jpg";
+import AWS_logo from "../assets/aws_logo.svg";
 import Rails from "../assets/rails_logo.svg";
 import Ruby from "../assets/ruby_logo.svg";
 import React_logo from "../assets/react_logo.svg";
@@ -19,7 +20,7 @@ import Illustrator from "../assets/illustrator_logo.svg";
 import PhotoShop from "../assets/photoshop_logo.svg";
 import InDesign from "../assets/inDesign_logo.svg";
 
-function About() {
+const About = () => {
   return (
     <div>
       <Header />
@@ -76,7 +77,7 @@ function About() {
 
             <h4>Softwares....................</h4>
             <p>
-              Ruby on Rails, Ruby, MongoDB, React, Node, Storybook, JavaScript,
+              Ruby on Rails, Ruby, MongoDB, React, Node, AWS, Storybook, JavaScript,
               Git, GitHub, HTML, CSS, Express, TypeScript, Jest, Postgresql,
               Postman, WordPress, Bootstrap, AutoCAD, Shopify, SketchUp,
               AfterEffect, Illustrator, PhotoShop, InDesign
@@ -84,6 +85,7 @@ function About() {
           </div>
         </div>
         <div className="software">
+          <img src={AWS_logo} alt="AWS logo" />
           <img src={Rails} alt="Ruby on Rails logo" />
           <img src={Ruby} alt="Ruby logo" />
           <img src={React_logo} alt="React logo" />
@@ -104,5 +106,5 @@ function About() {
       <Footer />
     </div>
   );
-}
+};
 export default About;

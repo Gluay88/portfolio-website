@@ -3,6 +3,7 @@ import "../App.css";
 import Header from "../components/Header";
 import AnimationHome from "../components/AnimationHome";
 import Footer from "../components/Footer";
+import AWS_logo from "../assets/aws_logo.svg";
 import Rails from "../assets/rails_logo.svg";
 import Ruby from "../assets/ruby_logo.svg";
 import React_logo from "../assets/react_logo.svg";
@@ -11,13 +12,14 @@ import HTML_logo from "../assets/html_logo.svg";
 import CSS_logo from "../assets/css_logo.svg";
 import Wordpress from "../assets/wordpress.svg";
 
-function Home() {
+const Home = () => {
   return (
     <div>
       <Header />
       <AnimationHome />
       <div className="container-all"></div>
       <div className="software-home">
+        <img src={AWS_logo} alt="AWS logo" />
         <img src={Rails} alt="Ruby on Rails logo" />
         <img src={Ruby} alt="Ruby logo" />
         <img src={React_logo} alt="React logo" />
@@ -29,5 +31,5 @@ function Home() {
       <Footer />
     </div>
   );
-}
+};
 export default Home;

@@ -4,7 +4,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useTransition, animated } from "react-spring";
 import { Link } from "react-router-dom";
 
-function Navigation() {
+const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const transitions = useTransition(showMenu, {
@@ -69,6 +69,6 @@ function Navigation() {
       )}
     </nav>
   );
-}
+};
 
 export default Navigation;

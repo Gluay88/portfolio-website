@@ -1,0 +1,337 @@
+/*********** Projects Page ************/
+.projects-page {
+  max-width: 1200px;
+  padding-bottom: 120px; /* room above the fixed footer */
+}
+
+.projects-intro {
+  text-align: center;
+  color: #c9c6dd;
+  font-size: 15px;
+  margin: 8px auto 40px;
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+/* tech tags, shared by the featured project and the cards */
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.tech-list li {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #e9b5fe;
+  background-color: rgba(233, 181, 254, 0.1);
+  border: 1px solid rgba(233, 181, 254, 0.25);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+/* ---------- Featured project ---------- */
+.featured-project {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  grid-template-areas:
+    "info video"
+    "designs designs";
+  gap: 28px;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(160, 151, 203, 0.35);
+  box-shadow: 0 20px 40px rgba(10, 2, 30, 0.35);
+}
+
+.featured-info {
+  grid-area: info;
+}
+
+.eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ff6d6d;
+  margin-bottom: 10px;
+}
+
+.featured-info h3 {
+  font-size: 24px;
+  color: #e9b5fe;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.featured-info p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ededed;
+  margin-bottom: 14px;
+}
+
+.featured-info span {
+  color: #e9b5fe;
+}
+
+.featured-info .tech-list {
+  margin-top: 20px;
+}
+
+.featured-video {
+  grid-area: video;
+  align-self: center;
+  width: 100%;
+  aspect-ratio: 426 / 230; /* the video's own shape */
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.featured-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.featured-designs {
+  grid-area: designs;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.design-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(160, 151, 203, 0.25);
+  color: #fff;
+  text-decoration: none;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.design-card img {
+  width: 120px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.design-card span {
+  display: block;
+  font-size: 15px;
+  color: #e9b5fe;
+}
+
+.design-card small {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #c9c6dd;
+}
+
+.design-card:hover {
+  border-color: #ff6d6d;
+  transform: translateY(-3px);
+}
+
+/* ---------- More projects ---------- */
+.other-projects {
+  margin-top: 64px;
+}
+
+.other-projects > h3 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.project-filters button {
+  font-family: inherit;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ededed;
+  background-color: transparent;
+  border: 1px solid rgba(160, 151, 203, 0.6);
+  border-radius: 999px;
+  padding: 7px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.project-filters button:hover {
+  border-color: #e9b5fe;
+  color: #e9b5fe;
+}
+
+.project-filters button.active {
+  background-color: #ff6d6d;
+  border-color: #ff6d6d;
+  color: #fff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(160, 151, 203, 0.3);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
+  animation: projectsFadeUp 0.6s ease-out both;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #e9b5fe;
+  box-shadow: 0 16px 30px rgba(10, 2, 30, 0.45);
+}
+
+.project-card-image {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-card-image img {
+  transform: scale(1.05);
+}
+
+.project-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff6d6d;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+  padding: 18px;
+}
+
+.project-type {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #b3d0fe;
+}
+
+.project-card-body h3 {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* keeps the link at the bottom so cards in a row line up */
+.project-link {
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 14px;
+  color: #ff6d6d;
+}
+
+.project-card:hover .project-link {
+  color: #e9b5fe;
+}
+
+@keyframes projectsFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Tablet & phone ---------- */
+@media screen and (max-width: 900px) {
+  .featured-project {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "info"
+      "video"
+      "designs";
+    padding: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .featured-project {
+    padding: 18px;
+  }
+
+  .featured-info h3 {
+    font-size: 20px;
+  }
+
+  .featured-designs {
+    grid-template-columns: 1fr;
+  }
+
+  .design-card img {
+    width: 90px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 14px;
+  }
+
+  .project-card-body {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .project-card-body h3 {
+    font-size: 15px;
+  }
+
+  .tech-list li {
+    font-size: 11px;
+    padding: 2px 8px;
+  }
+}
