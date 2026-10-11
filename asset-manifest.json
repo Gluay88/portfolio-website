@@ -1,7 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.da600bcd.css",
-    "main.js": "/portfolio-website/static/js/main.525de045.js",
+    "main.css": "/portfolio-website/static/css/main.0355a89b.css",
+    "main.js": "/portfolio-website/static/js/main.d0e4c200.js",
+    "static/js/125.e827a41a.chunk.js": "/portfolio-website/static/js/125.e827a41a.chunk.js",
+    "static/js/498.0f9c256b.chunk.js": "/portfolio-website/static/js/498.0f9c256b.chunk.js",
+    "static/js/703.df213bba.chunk.js": "/portfolio-website/static/js/703.df213bba.chunk.js",
+    "static/js/513.766182ab.chunk.js": "/portfolio-website/static/js/513.766182ab.chunk.js",
     "static/media/uxui.jpg": "/portfolio-website/static/media/uxui.1c503dbfe8fa8cb57417.jpg",
     "static/media/cat_tinder.jpg": "/portfolio-website/static/media/cat_tinder.00477231f9b929f991ba.jpg",
     "static/media/lloyd-pest-control.jpg": "/portfolio-website/static/media/lloyd-pest-control.0d09946601a4d2334548.jpg",
@@ -38,11 +42,15 @@
     "static/media/JS_logo.svg": "/portfolio-website/static/media/JS_logo.384fd9f7688f68eb9e3caca3975129bb.svg",
     "index.html": "/portfolio-website/index.html",
     "static/media/aws_logo.svg": "/portfolio-website/static/media/aws_logo.815a5804f1c92702ca9ad3ee1a8c248a.svg",
-    "main.da600bcd.css.map": "/portfolio-website/static/css/main.da600bcd.css.map",
-    "main.525de045.js.map": "/portfolio-website/static/js/main.525de045.js.map"
+    "main.0355a89b.css.map": "/portfolio-website/static/css/main.0355a89b.css.map",
+    "main.d0e4c200.js.map": "/portfolio-website/static/js/main.d0e4c200.js.map",
+    "125.e827a41a.chunk.js.map": "/portfolio-website/static/js/125.e827a41a.chunk.js.map",
+    "498.0f9c256b.chunk.js.map": "/portfolio-website/static/js/498.0f9c256b.chunk.js.map",
+    "703.df213bba.chunk.js.map": "/portfolio-website/static/js/703.df213bba.chunk.js.map",
+    "513.766182ab.chunk.js.map": "/portfolio-website/static/js/513.766182ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da600bcd.css",
-    "static/js/main.525de045.js"
+    "static/css/main.0355a89b.css",
+    "static/js/main.d0e4c200.js"
   ]
 }
