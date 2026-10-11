@@ -14,13 +14,23 @@ import ChatWithMeGPT from "../assets/ChatWithMe.jpg";
 import Customers from "../assets/Customers.jpg";
 import MorningMoms from "../assets/MorningMoms.jpg";
 
-export const projects = [
+// Set `hidden: true` to keep a project out of the site without deleting it
+const allProjects = [
+  {
+    title: "TopNotch Tech",
+    type: "MERN E-Commerce",
+    image: TopNotchTech,
+    tech: ["React", "Node.js", "Express", "MongoDB"],
+    link: "https://magnificent-blini-b769ee.netlify.app/",
+    inProgress: true,
+  },
   {
     title: "Morning Moms",
     type: "E-Commerce App",
     image: MorningMoms,
     tech: ["Liquid (Ruby)", "JSON", "JavaScript", "CSS", "REST API"],
     link: "https://morningmoms.myshopify.com/",
+    hidden: true,
   },
   {
     title: "Customers-DB",
@@ -72,14 +82,6 @@ export const projects = [
     link: "https://github.com/Gluay88/lloyd-pest-control",
   },
   {
-    title: "TopNotch Tech",
-    type: "MERN E-Commerce",
-    image: TopNotchTech,
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    link: "https://magnificent-blini-b769ee.netlify.app/",
-    inProgress: true,
-  },
-  {
     title: "myBucketList",
     type: "JWT Authentication",
     image: JWTAuth,
@@ -115,3 +117,5 @@ export const projects = [
     link: "https://github.com/Gluay88/cat-tinder-backend",
   },
 ];
+
+export const projects = allProjects.filter((p) => !p.hidden);
