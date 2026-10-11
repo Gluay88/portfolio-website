@@ -7,7 +7,6 @@ export const resume = {
   name: "Gluay S. Wang",
   title: "React-TypeScript UI/UX Developer",
   contact: [
-    "gluaysmedley@gmail.com",
     "linkedin.com/in/gluay-s-wang",
     "github.com/Gluay88",
     "gluay88.github.io/portfolio-website",

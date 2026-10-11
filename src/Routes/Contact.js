@@ -116,12 +116,8 @@ const Contact = () => {
           <aside className="contact-info">
             <p className="eyebrow">Get in touch</p>
             <h3>Let’s work together</h3>
-            <p>Send me a message with the form, or reach me directly:</p>
+            <p>Send me a message with the form, or find me here:</p>
             <ul className="contact-links">
-              <li>
-                <span>Email</span>
-                <a href={`mailto:${MY_EMAIL}`}>{MY_EMAIL}</a>
-              </li>
               <li>
                 <span>LinkedIn</span>
                 <a
@@ -227,8 +223,15 @@ const Contact = () => {
             )}
             {status === "error" && (
               <p className="form-status form-status-error" role="alert">
-                Sorry, something went wrong. Please email me at{" "}
-                <a href={`mailto:${MY_EMAIL}`}>{MY_EMAIL}</a>.
+                Sorry, something went wrong. Please try again, or message me on{" "}
+                <a
+                  href="https://www.linkedin.com/in/gluay-s-wang/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+                .
               </p>
             )}
           </form>
