@@ -24,10 +24,19 @@ import InDesign from "../assets/inDesign_logo.svg";
 
 const experience = [
   {
+    role: "Senior Full Stack Developer",
+    company: "Mobomo",
+    dates: "Aug 2023 – Present",
+    highlights: [
+      "Drive digital transformation initiatives on federal sector contracts.",
+    ],
+    tech: ["React", "single-spa", "Node.js", "AWS", "Serverless"],
+  },
+  {
     role: "Software Engineer",
     company: "EAGL Technology",
     location: "Albuquerque, NM",
-    dates: "Jun 2022 – Present",
+    dates: "Jun 2022 – Jul 2023",
     highlights: [
       "Build NG-EAGL, gunshot detection software that uses sensor technology developed by the Department of Energy to detect and analyze active shooter events, indoors and outdoors.",
       "Develop the map-based interface with React and Mapbox GL, working across the stack with Django, GraphQL, middleware and APIs.",
@@ -131,10 +140,10 @@ const About = () => {
               Software Engineer · Full Stack Developer
             </p>
             <p>
-              Hello! My name is Gluay <span>(“Glue-A”)</span>. I’m a software
-              engineer coming from gunshot and weapon detection software
-              development, seeking a challenging position in a company that
-              values innovation, excellence and creativity.
+              Hello! My name is Gluay <span>(“Glue-A”)</span>. I’m a Senior Full
+              Stack Developer at Mobomo, building React and serverless AWS
+              applications for federal clients. Before that, I built gunshot and
+              weapon detection software at EAGL Technology.
             </p>
             <div className="about-actions">
               <Link className="btn-primary" to="/Projects">
@@ -155,18 +164,20 @@ const About = () => {
                 <p className="timeline-dates">{job.dates}</p>
                 <h4>{job.role}</h4>
                 <p className="timeline-place">
-                  {job.company} · {job.location}
+                  {[job.company, job.location].filter(Boolean).join(" · ")}
                 </p>
                 <ul className="job-highlights">
                   {job.highlights.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
-                <ul className="tech-list">
-                  {job.tech.map((t) => (
-                    <li key={t}>{t}</li>
-                  ))}
-                </ul>
+                {job.tech.length > 0 && (
+                  <ul className="tech-list">
+                    {job.tech.map((t) => (
+                      <li key={t}>{t}</li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ol>

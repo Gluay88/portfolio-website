@@ -147,7 +147,7 @@ const Contact = () => {
                 <label htmlFor="firstName">First name</label>
                 <input
                   type="text"
-                  placeholder="Jane"
+                  placeholder="Feynman"
                   autoComplete="given-name"
                   required
                   {...fieldProps("firstName")}
@@ -159,7 +159,7 @@ const Contact = () => {
                 <label htmlFor="lastName">Last name</label>
                 <input
                   type="text"
-                  placeholder="Doe"
+                  placeholder="Wang"
                   autoComplete="family-name"
                   required
                   {...fieldProps("lastName")}
@@ -172,7 +172,7 @@ const Contact = () => {
               <label htmlFor="email">Email</label>
               <input
                 type="email"
-                placeholder="jane@example.com"
+                placeholder="feynman@example.com"
                 autoComplete="email"
                 required
                 {...fieldProps("email")}

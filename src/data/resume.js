@@ -1,18 +1,17 @@
 // Resume content used to generate the downloadable PDF (see src/lib/resumePdf.js).
 // Edit this file to update the resume; the PDF is rebuilt on every download.
-// TODO: the source resume (2023 .docx) had unfinished placeholders, left out here:
+// TODO: the source resume (2023 .docx) had an unfinished placeholder, left out here:
 //   - the summary's years of experience ("XX years")
-//   - the blanks in the Mobomo role description
 export const resume = {
   name: "Gluay S. Wang",
-  title: "React-TypeScript UI/UX Developer",
+  title: "Senior Full Stack Developer",
   contact: [
     "linkedin.com/in/gluay-s-wang",
     "github.com/Gluay88",
-    "gluay88.github.io/portfolio-website",
+    "gluay.com",
   ],
   summary:
-    "Highly skilled and motivated Software Engineer/Developer with experience in software development, User Interface/User Experience, and Graphic Design. Successful track record building intuitive and visually appealing user interfaces. Adaptive team contributor focused on innovation, excellence, and creativity.",
+    "Senior Full Stack Developer with experience in software development, User Interface/User Experience, and Graphic Design. Builds React and Node.js applications on serverless AWS for federal sector contracts, with a successful track record of intuitive and visually appealing user interfaces. Adaptive team contributor focused on innovation, excellence, and creativity.",
   skills: [
     {
       label: "Languages",
@@ -21,11 +20,15 @@ export const resume = {
     {
       label: "Frameworks & Libraries",
       items:
-        "Ruby on Rails, React, MongoDB, Storybook, Node, Jest, JQuery, Bootstrap, Express, Redux, Next.js, MUI, TailwindCSS",
+        "React, single-spa, Next.js, Redux, Node.js, Express, Ruby on Rails, Django, Storybook, Jest, JQuery, Bootstrap, MUI, TailwindCSS",
     },
     {
       label: "Databases & Testing",
-      items: "PostgreSQL, Rspec, TDD, BDD, Django, MongoDB, MySQL",
+      items: "PostgreSQL, Rspec, TDD, BDD, MongoDB, MySQL",
+    },
+    {
+      label: "Cloud",
+      items: "AWS, Serverless",
     },
     {
       label: "Software",
@@ -36,16 +39,16 @@ export const resume = {
   experience: [
     {
       company: "Mobomo, LLC",
-      role: "Software Engineer",
-      dates: "6/2023 – Present",
+      role: "Senior Full Stack Developer",
+      dates: "8/2023 – Present",
       description:
-        "Sourced and onboarded to drive digital transformation initiatives in federal sector contracts, including work for the Department of Homeland Security.",
+        "Drive digital transformation initiatives on federal sector contracts using React, single-spa, Node.js, AWS and Serverless.",
       bullets: [],
     },
     {
       company: "EAGL Technology, Inc.",
       role: "Software Engineer",
-      dates: "6/2022 – 6/2023",
+      dates: "6/2022 – 7/2023",
       description:
         "Developed and maintained gunshot and weapon detection software (developed by the Department of Energy) using React, TypeScript, JavaScript, MapboxGL, MUI, WebSockets, SocketIO, Django, Python, GraphQL, MySQL and Middleware. Collaborate with cross-functional teams to design and implement new features and enhancements.",
       bullets: [

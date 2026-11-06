@@ -13,6 +13,8 @@ import Friends from "../assets/80steam.jpg";
 import ChatWithMeGPT from "../assets/ChatWithMe.jpg";
 import Customers from "../assets/Customers.jpg";
 import MorningMoms from "../assets/MorningMoms.jpg";
+import CatCrew from "../assets/catcrew-logo.png";
+import ATeamOrbit from "../assets/ateam-orbit.jpg";
 
 // Set `hidden: true` to keep a project out of the site without deleting it
 const allProjects = [
@@ -23,6 +25,13 @@ const allProjects = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     link: "https://magnificent-blini-b769ee.netlify.app/",
     inProgress: true,
+  },
+  {
+    title: "CatCrew",
+    type: "Social App",
+    image: CatCrew,
+    tech: ["React", "Node.js", "AWS Lambda", "DynamoDB", "TailwindCSS"],
+    link: "https://feynmancatcrew.github.io/cat-crew/",
   },
   {
     title: "Morning Moms",
@@ -45,6 +54,13 @@ const allProjects = [
     image: LegoCars,
     tech: ["React", "TypeScript", "Vite", "Google Autocomplete"],
     link: "https://lego-shop-gluay.netlify.app/",
+  },
+  {
+    title: "ATeamOrbit",
+    type: "Full Stack App",
+    image: ATeamOrbit,
+    tech: ["React", "Node.js", "AWS Lambda", "DynamoDB"],
+    link: "https://gluay88.github.io/a-team-orbit/",
   },
   {
     title: "ChatWithMeGPT",

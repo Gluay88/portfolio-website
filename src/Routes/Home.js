@@ -139,7 +139,7 @@ const Home = () => {
             </p>
             <p className="hero-status">
               <span className="status-dot" aria-hidden="true"></span>
-              Currently: Software Engineer at EAGL Technology
+              Currently: Senior Full Stack Developer at Mobomo
             </p>
             <div className="hero-actions">
               <Link className="btn-primary" to="/Projects">
